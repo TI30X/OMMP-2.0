@@ -10,7 +10,7 @@
   <main class="ommp-exercise-shell">
     <div class="ommp-exercise-toolbar">
       <strong>OMMP Übungsmodul</strong>
-      <span>Übungsmodus · Klasse 10a · Lehrer X</span>
+      <span id="session-info">Übungsmodus · Klasse 10a · Lehrer X</span>
     </div>
 
     <div class="ommp-exercise-grid">
@@ -40,5 +40,16 @@
       </aside>
     </div>
   </main>
+  <script>
+    var params = new URLSearchParams(window.location.search);
+    var mode = params.get("p_nr") === "0" ? "Übungsmodus" : "Prüfungsmodus";
+    var klasse = params.get("klasse") || "";
+    var zug = params.get("zug") || "";
+    var teacher = params.get("teachername") || "Lehrer X";
+    var school = params.get("kuerzel_schule") || "Übungsschule";
+    var classText = klasse ? " · Klasse " + klasse + zug : "";
+
+    document.getElementById("session-info").textContent = mode + classText + " · " + teacher + " · " + school;
+  </script>
 </body>
 </html>
