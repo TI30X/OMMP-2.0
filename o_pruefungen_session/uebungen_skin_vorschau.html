@@ -19,27 +19,38 @@
         <p>Vereinfache den Term und trage das Ergebnis ein.</p>
         <p><strong>3x + 5x - 2</strong></p>
 
-        <form>
+        <form id="demo-form">
           <label for="antwort">Antwort</label><br>
           <input id="antwort" type="text" value="8x - 2">
-          <input type="button" value="Prüfen">
-          <input type="submit" value="Nächste Aufgabe">
+          <input id="check-answer" type="button" value="Prüfen">
+          <input id="next-task" type="submit" value="Nächste Aufgabe">
         </form>
 
-        <div class="ommp-answer-panel">
+        <div class="ommp-answer-panel" id="hint-panel">
           <strong>Hinweis</strong>
           <p>Fasse zuerst gleiche Variablen zusammen.</p>
+        </div>
+
+        <div class="ommp-answer-panel" id="feedback-panel" hidden>
+          <strong id="feedback-title">Feedback</strong>
+          <p id="feedback-text"></p>
+        </div>
+
+        <div class="ommp-answer-panel" id="solution-panel" hidden>
+          <strong>Lösung</strong>
+          <p>3x + 5x - 2 = 8x - 2</p>
         </div>
       </section>
 
       <aside class="ommp-exercise-card">
         <h2>Navigation</h2>
-        <p>Aufgabe 1 von 8</p>
-        <button type="button">Lösung anzeigen</button>
-        <button type="button">Zur Übersicht</button>
+        <p id="task-progress">Aufgabe 1 von 8</p>
+        <button id="show-solution" type="button">Lösung anzeigen</button>
+        <a class="button" href="ueberblick_o_pruefungen_2.html">Zur Übersicht</a>
       </aside>
     </div>
   </main>
+
   <script>
     var params = new URLSearchParams(window.location.search);
     var mode = params.get("p_nr") === "0" ? "Übungsmodus" : "Prüfungsmodus";
@@ -50,6 +61,46 @@
     var classText = klasse ? " · Klasse " + klasse + zug : "";
 
     document.getElementById("session-info").textContent = mode + classText + " · " + teacher + " · " + school;
+
+    var taskNumber = 1;
+    var form = document.getElementById("demo-form");
+    var answer = document.getElementById("antwort");
+    var feedbackPanel = document.getElementById("feedback-panel");
+    var feedbackTitle = document.getElementById("feedback-title");
+    var feedbackText = document.getElementById("feedback-text");
+    var solutionPanel = document.getElementById("solution-panel");
+    var taskProgress = document.getElementById("task-progress");
+    var showSolution = document.getElementById("show-solution");
+
+    function normalizeAnswer(value) {
+      return value.toLowerCase().replace(/\s+/g, "");
+    }
+
+    document.getElementById("check-answer").addEventListener("click", function() {
+      var isCorrect = normalizeAnswer(answer.value) === "8x-2";
+      feedbackPanel.hidden = false;
+      feedbackTitle.className = isCorrect ? "richtig" : "falsch";
+      feedbackTitle.textContent = isCorrect ? "Richtig" : "Noch nicht ganz";
+      feedbackText.textContent = isCorrect
+        ? "Genau. 3x und 5x werden zu 8x zusammengefasst."
+        : "Schau nochmals auf die x-Terme: 3x + 5x ergibt 8x.";
+    });
+
+    showSolution.addEventListener("click", function() {
+      solutionPanel.hidden = !solutionPanel.hidden;
+      showSolution.textContent = solutionPanel.hidden ? "Lösung anzeigen" : "Lösung ausblenden";
+    });
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      taskNumber = taskNumber === 8 ? 1 : taskNumber + 1;
+      taskProgress.textContent = "Aufgabe " + taskNumber + " von 8";
+      feedbackPanel.hidden = true;
+      solutionPanel.hidden = true;
+      showSolution.textContent = "Lösung anzeigen";
+      answer.value = "";
+      answer.focus();
+    });
   </script>
 </body>
 </html>
