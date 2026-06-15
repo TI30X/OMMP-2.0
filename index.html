@@ -4,138 +4,79 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OMMP Index</title>
-<meta name="description" content="OMMP, Online Mathe Module Prüfungen. Übe und prüfe grundlegende Mathe Grundfertigkeiten. OMMP.sternenwind.ch">
-<meta name="keywords" content="Mathe Nachhilfe, Mathematik Module, Online Mathe Module, Mathe Prüfungen online, sternenwind.ch">
+<meta name="description" content="OMMP, Online Mathe Module Prüfungen. Übe und prüfe grundlegende Mathe-Grundfertigkeiten.">
+<meta name="keywords" content="Mathe Nachhilfe, Mathematik Module, Online Mathe Module, Mathe Prüfungen online, Mathe Erklärvideos">
 <meta name="author" content="Peter Kohl">
-<style>
-  :root{
-    --blue:#66ccff;          /* original OMMP blue */
-    --blue-deep:#33b5f0;
-    --blue-dark:#1f6f96;
-    --page:#eef2f5;          /* soft page background */
-    --ink:#102733;
-    --btn-border:rgba(255,255,255,.85);
-    --shadow:0 10px 30px rgba(20,80,120,.18);
-  }
-  *{box-sizing:border-box}
-  body{
-    margin:0;
-    font-family:Verdana,Geneva,sans-serif;   /* keep original face */
-    color:var(--ink);
-    background:
-      radial-gradient(900px 500px at 85% -10%, #dff3ff, transparent 60%),
-      var(--page);
-    min-height:100vh;
-    padding:32px 16px;
-    display:flex;justify-content:center;
-  }
-
-  /* ---- the signature blue "blob" panel, refined ---- */
-  .panel{
-    position:relative;
-    width:min(960px,100%);
-    background:linear-gradient(160deg,#7ad2ff 0%, var(--blue) 55%, #57c2f5 100%);
-    border-radius:24px 64px 32px 64px;   /* organic, like original */
-    box-shadow:var(--shadow);
-    padding:38px clamp(22px,5vw,56px) 44px;
-  }
-
-  /* ---- header / title ---- */
-  .head{text-align:center;margin-bottom:26px}
-  .brandline{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
-  .logo{
-    width:54px;height:54px;border-radius:13px;flex:none;overflow:hidden;
-    background:#fff;box-shadow:0 4px 12px rgba(20,80,120,.25);
-    border:2px solid #fff;
-  }
-  .logo img{width:100%;height:100%;object-fit:cover;display:block}
-  h1{margin:0;font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:700;letter-spacing:.2px}
-  h1 em{font-style:italic}
-  .subtitle{margin:10px 0 0;font-weight:700;font-size:clamp(.95rem,2vw,1.12rem)}
-  .subtitle em{font-style:italic}
-
-  /* ---- pill buttons (kept from original .button1, refined) ---- */
-  .btnrow{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin:18px 0}
-  .button1{
-    display:inline-block;padding:.6em 1.5em;border-radius:1.6em;
-    border:2px solid var(--btn-border);
-    background:rgba(255,255,255,.12);
-    color:#fff;text-decoration:none;font-weight:700;font-size:.96rem;
-    text-align:center;cursor:pointer;
-    transition:all .18s ease;
-    text-shadow:0 1px 1px rgba(0,60,90,.25);
-  }
-  .button1:hover{background:#fff;color:var(--blue-dark);transform:translateY(-2px);text-shadow:none;box-shadow:0 6px 16px rgba(0,60,90,.25)}
-
-  /* ---- two-column body (bullets left, image right) ---- */
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start;margin-top:8px}
-  ul.points{list-style:none;margin:0;padding:0;display:grid;gap:16px}
-  ul.points li{
-    background:rgba(255,255,255,.78);border-radius:14px;padding:14px 16px;
-    line-height:1.5;font-size:.98rem;box-shadow:0 2px 6px rgba(20,80,120,.10);
-  }
-  ul.points li b{color:var(--blue-dark)}
-
-  .media{text-align:center}
-  .media .caption{font-weight:700;margin:0 0 10px}
-  .media figure{margin:0;border-radius:16px;overflow:hidden;background:#fff;
-    box-shadow:0 8px 22px rgba(20,80,120,.25);border:4px solid #fff}
-  .media img{display:block;width:100%;height:auto}
-
-  /* ---- bottom button cluster ---- */
-  .bottom{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:30px}
-
-  footer{margin-top:28px;text-align:center;font-size:.82rem;color:rgba(255,255,255,.95)}
-  footer a{color:#fff;text-decoration:underline}
-
-  @media (max-width:680px){
-    .grid{grid-template-columns:1fr}
-    .panel{border-radius:22px 36px 22px 36px}
-  }
-</style>
+<link rel="stylesheet" href="o_pruefungen_session/css-ommp/ommp-redesign.css">
 </head>
-<body>
-  <main class="panel">
-    <div class="head">
-      <div class="brandline">
-        <span class="logo"><img src="https://www.ommp.info/o_pruefungen_session/login_module/user/buch-skizze.jpg" alt="OMMP Buch-Skizze Logo"></span>
-        <h1>Herzlich Willkommen bei OMM<em>P</em></h1>
+<body class="ommp-site">
+  <div class="ommp-page">
+    <main class="ommp-shell">
+      <div class="ommp-content">
+        <header class="ommp-header">
+          <a class="ommp-brand" href="index.html" aria-label="OMMP Startseite">
+            <span class="ommp-mark">P</span>
+            <span>
+              <span class="ommp-brand-text">OMM<em>P</em></span>
+              <span class="ommp-brand-sub">Online Mathe Module Prüfungen</span>
+            </span>
+          </a>
+          <nav class="ommp-nav" aria-label="Navigation">
+            <a href="o_pruefungen_session/login_module/login_schulen.html" target="OMMP">Übungsmodule</a>
+            <a href="Mathe-Erklaer-Videos/ErklaerVideos.htm" target="self">Videos</a>
+            <a href="https://sternenwind.ch/Kontakt/kohl.php" target="kontakt">Kontakt</a>
+          </nav>
+        </header>
+
+        <section class="ommp-hero" aria-labelledby="title">
+          <div>
+            <p class="ommp-kicker">Übe und prüfe deine Mathe-Grundlagen</p>
+            <h1 id="title" class="ommp-title">Herzlich Willkommen bei OMM<em>P</em></h1>
+            <p class="ommp-lead">Der einfache Einstieg für Mathematik: Grundlagen üben, Erklärvideos anschauen und Schritt für Schritt sicherer werden.</p>
+
+            <div class="ommp-main-actions" aria-label="Wichtigste Einstiege">
+              <a class="ommp-action-card" href="o_pruefungen_session/login_module/login_schulen.html" target="OMMP">
+                <strong>Übungsmodule starten</strong>
+                <span>Schule wählen und direkt mit den Online-Mathe-Modulen beginnen.</span>
+              </a>
+              <a class="ommp-action-card" href="Mathe-Erklaer-Videos/ErklaerVideos.htm" target="self">
+                <strong>Mathe-Erklärvideos öffnen</strong>
+                <span>Themen finden, Video öffnen, selbst rechnen und Lösungen vergleichen.</span>
+              </a>
+            </div>
+          </div>
+
+          <figure class="ommp-book">
+            <img src="o_pruefungen_session/login_module/user/buch-skizze.jpg" alt="OMMP Buch-Skizze">
+            <figcaption>Mathe-Grundlagen üben und festigen</figcaption>
+          </figure>
+        </section>
+
+        <section class="ommp-section ommp-panel" aria-labelledby="why-title">
+          <h2 id="why-title">Was ist OMM<em>P</em>?</h2>
+          <ul class="ommp-points">
+            <li><b>Übung macht den Meister:</b> Individualisiertes Üben von Grundlagenfertigkeiten (BFSK).</li>
+            <li>Leichte Variationen in den Übungen für die Schuljahre 9 bis 12.</li>
+            <li>Betreutes Üben und Fehleranalyse, zum Beispiel in Partnerarbeit.</li>
+            <li>Online-Prüfungen ohne Korrekturaufwand für den Lehrer.</li>
+          </ul>
+        </section>
+
+        <section class="ommp-section ommp-panel" aria-labelledby="more-title">
+          <h2 id="more-title">Weitere OMMP-Seiten</h2>
+          <div class="ommp-link-grid">
+            <a href="o_pruefungen_session/01-OMMP-Infos/Willkommen-zu-OMMP-3.mp4" target="OMMP">Was ist OMMP?</a>
+            <a href="o_pruefungen_session/ueberblick_o_pruefungen_2.html">Überblick Prüfungen</a>
+            <a href="Mathe-Stoffplaene/Stoffplaene.htm" target="stoffplaene">Stoffpläne / Lerntipps</a>
+            <a href="lehrstuecke/lehrstuecke_mathe.htm" target="lehrstuecke">Lehrstücke</a>
+            <a href="https://sternenwind.ch/Kontakt/kohl.php" target="kontakt">Kontakt</a>
+            <a href="https://sternenwind.ch/roman/der_lehrer_xaver_ohm.htm" target="Roman">Roman</a>
+          </div>
+        </section>
       </div>
-      <p class="subtitle">Online Mathe Module <em>Prüfungen</em> &nbsp;·&nbsp; Übe und prüfe deine Mathe-Grundlagen</p>
-    </div>
+    </main>
 
-    <div class="btnrow">
-      <a class="button1" href="https://www.ommp.info/o_pruefungen_session/01-OMMP-Infos/Willkommen-zu-OMMP-3.mp4">Was ist OMM<em>P</em></a>
-      <a class="button1" href="https://www.ommp.info/o_pruefungen_session/login_module/login_schulen.php">Übungs-Module</a>
-    </div>
-
-    <div class="grid">
-      <ul class="points">
-        <li><b>Übung macht den Meister:</b> Individualisiertes Üben von Grundlagenfertigkeiten (BFSK).</li>
-        <li>Leichte Variationen in den Übungen &mdash; Schuljahre 9&nbsp;-&nbsp;12.</li>
-        <li>Betreutes Üben und Fehleranalyse, z.&nbsp;B. in Partnerarbeit.</li>
-        <li>Online Prüfungen ohne Korrekturaufwand für den Lehrer.</li>
-      </ul>
-
-      <div class="media">
-        <p class="caption">Erklärvideos Schuljahre 9&nbsp;-&nbsp;12</p>
-        <figure>
-          <img src="https://www.ommp.info/o_pruefungen_session/login_module/user/buch-skizze.jpg" alt="Buch-Skizze">
-        </figure>
-        <div class="btnrow" style="margin-top:16px">
-          <a class="button1" href="https://www.ommp.info/Mathe-Erklaer-Videos/ErklaerVideos.htm">Mathe Erklärvideos</a>
-          <a class="button1" href="https://www.ommp.info/Mathe-Stoffplaene/Stoffplaene.htm">Vorkurs / Lerntipps Stoffpläne</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="bottom">
-      <a class="button1" href="https://www.ommp.info/lehrstuecke/lehrstuecke_mathe.htm">Lehrstücke</a>
-      <a class="button1" href="https://sternenwind.ch/Kontakt/kohl.php">Kontakt</a>
-      <a class="button1" href="https://sternenwind.ch/roman/der_lehrer_xaver_ohm.htm">Roman ' Der Lehrer Xaver Ohm '</a>
-    </div>
-
-    <footer>OMMP.sternenwind.ch &nbsp;·&nbsp; Peter Kohl</footer>
-  </main>
+    <footer class="ommp-footer">OMMP.sternenwind.ch &nbsp; Peter Kohl</footer>
+  </div>
 </body>
 </html>

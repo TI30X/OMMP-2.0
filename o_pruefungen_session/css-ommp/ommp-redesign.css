@@ -1,0 +1,871 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --ommp-blue: #66ccff;
+  --ommp-blue-2: #45bdeb;
+  --ommp-blue-dark: #176a93;
+  --ommp-sky: #e7f8ff;
+  --ommp-paper: #f6fbfd;
+  --ommp-white: #ffffff;
+  --ommp-ink: #103040;
+  --ommp-muted: #4d6875;
+  --ommp-line: rgba(23, 106, 147, 0.2);
+  --ommp-shadow: 0 18px 42px rgba(19, 91, 130, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body.ommp-site {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ommp-ink);
+  background:
+    radial-gradient(900px 420px at 75px -90px, #ffffff 0, #e2f6ff 52%, transparent 53%),
+    linear-gradient(180deg, #eef8fc 0, var(--ommp-paper) 62%, #e9f0f3 100%);
+  font-family: Verdana, Geneva, sans-serif;
+  line-height: 1.55;
+}
+
+body.ommp-site a {
+  color: inherit;
+}
+
+.ommp-page {
+  width: min(1120px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 24px 0 36px;
+}
+
+.ommp-shell {
+  position: relative;
+  overflow: hidden;
+  padding: 26px clamp(18px, 4vw, 42px) 36px;
+  border: 2px solid rgba(255, 255, 255, 0.76);
+  border-radius: 26px 70px 30px 70px;
+  background: linear-gradient(150deg, #88ddff 0, var(--ommp-blue) 48%, #4fc3f4 100%);
+  box-shadow: var(--ommp-shadow);
+}
+
+.ommp-shell::before,
+.ommp-shell::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.24);
+  pointer-events: none;
+}
+
+.ommp-shell::before {
+  top: -125px;
+  left: -120px;
+  width: 285px;
+  height: 285px;
+}
+
+.ommp-shell::after {
+  right: -90px;
+  bottom: -130px;
+  width: 285px;
+  height: 285px;
+  background: rgba(255, 255, 255, 0.17);
+}
+
+.ommp-content {
+  position: relative;
+  z-index: 1;
+}
+
+.ommp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 26px;
+}
+
+.ommp-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ommp-ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ommp-mark {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  border-radius: 16px;
+  color: var(--ommp-blue-dark);
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(9, 79, 118, 0.18);
+  font-size: 1.28rem;
+}
+
+.ommp-brand-text {
+  display: block;
+  font-size: 1.12rem;
+  letter-spacing: 0;
+}
+
+.ommp-brand-sub {
+  display: block;
+  margin-top: 2px;
+  color: #17465c;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.ommp-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 9px;
+}
+
+.ommp-nav a,
+.ommp-button,
+.ommp-ghost-button {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 16px;
+  border-radius: 999px;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ommp-nav a,
+.ommp-ghost-button {
+  border: 2px solid rgba(255, 255, 255, 0.82);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  text-shadow: 0 1px 1px rgba(0, 62, 94, 0.2);
+}
+
+.ommp-nav a:hover,
+.ommp-ghost-button:hover {
+  color: var(--ommp-blue-dark);
+  background: #fff;
+  text-shadow: none;
+}
+
+.ommp-button {
+  border: 0;
+  color: var(--ommp-blue-dark);
+  background: #fff;
+  box-shadow: 0 10px 22px rgba(9, 79, 118, 0.14);
+}
+
+.ommp-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 13px 25px rgba(9, 79, 118, 0.18);
+}
+
+.ommp-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.ommp-kicker {
+  margin: 0 0 8px;
+  color: #17465c;
+  font-weight: 700;
+}
+
+.ommp-title {
+  margin: 0;
+  font-size: clamp(1.85rem, 4.2vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.ommp-lead {
+  max-width: 700px;
+  margin: 14px 0 0;
+  color: #17465c;
+  font-size: clamp(1rem, 1.6vw, 1.17rem);
+  font-weight: 700;
+}
+
+.ommp-book {
+  margin: 0;
+  padding: 10px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 14px 30px rgba(9, 79, 118, 0.18);
+  text-align: center;
+}
+
+.ommp-book img {
+  display: block;
+  width: 100%;
+  max-height: 330px;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+.ommp-book figcaption {
+  padding: 10px 8px 3px;
+  color: var(--ommp-blue-dark);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.ommp-main-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.ommp-action-card,
+.ommp-card,
+.ommp-panel {
+  border: 1px solid rgba(255, 255, 255, 0.86);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 24px rgba(9, 79, 118, 0.1);
+}
+
+.ommp-action-card {
+  display: block;
+  min-height: 138px;
+  padding: 20px;
+  color: var(--ommp-ink);
+  text-decoration: none;
+}
+
+.ommp-action-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(9, 79, 118, 0.2);
+}
+
+.ommp-action-card strong {
+  display: block;
+  color: var(--ommp-blue-dark);
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.ommp-action-card span {
+  display: block;
+  margin-top: 9px;
+  color: var(--ommp-muted);
+  font-size: 0.96rem;
+}
+
+.ommp-section {
+  margin-top: 20px;
+  padding: 22px;
+}
+
+.ommp-section h2,
+.ommp-section h3 {
+  margin: 0 0 12px;
+  color: var(--ommp-blue-dark);
+  line-height: 1.2;
+}
+
+.ommp-points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ommp-points li {
+  min-height: 88px;
+  padding: 14px 15px;
+  border: 1px solid var(--ommp-line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.ommp-points b {
+  color: var(--ommp-blue-dark);
+}
+
+.ommp-link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 10px;
+}
+
+.ommp-link-grid a {
+  display: flex;
+  min-height: 70px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: 1px solid var(--ommp-line);
+  border-radius: 14px;
+  color: var(--ommp-blue-dark);
+  background: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.ommp-link-grid a:hover {
+  border-color: var(--ommp-blue-2);
+  box-shadow: 0 10px 22px rgba(9, 79, 118, 0.12);
+}
+
+.ommp-footer {
+  margin-top: 16px;
+  padding: 0 10px;
+  color: #456371;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.ommp-form-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.95fr) minmax(260px, 1.05fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.ommp-login-box {
+  padding: 22px;
+}
+
+.ommp-login-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.ommp-login-form label {
+  color: var(--ommp-blue-dark);
+  font-weight: 700;
+}
+
+.ommp-login-form select {
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 11px;
+  border: 1px solid var(--ommp-line);
+  border-radius: 12px;
+  background: #fff;
+  color: var(--ommp-ink);
+  font: inherit;
+}
+
+.ommp-login-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.ommp-login-actions input,
+.ommp-login-actions button,
+.ommp-login-form input[type="submit"] {
+  min-height: 40px;
+  padding: 9px 16px;
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--ommp-blue-dark);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ommp-login-actions input:hover,
+.ommp-login-actions button:hover,
+.ommp-login-form input[type="submit"]:hover {
+  background: #0f5475;
+}
+
+.ommp-school-logos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ommp-school-logos img {
+  display: block;
+  width: 100%;
+  max-height: 142px;
+  object-fit: contain;
+  padding: 14px;
+  border: 1px solid var(--ommp-line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.ommp-info-output {
+  min-height: 72px;
+  margin-top: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--ommp-line);
+  border-radius: 14px;
+  background: #fff;
+  color: var(--ommp-ink);
+}
+
+.ommp-module-form {
+  display: grid;
+  gap: 16px;
+}
+
+.ommp-module-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ommp-field {
+  display: grid;
+  gap: 7px;
+  padding: 14px;
+  border: 1px solid var(--ommp-line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.ommp-field label,
+.ommp-field-title {
+  color: var(--ommp-blue-dark);
+  font-weight: 700;
+}
+
+.ommp-field input,
+.ommp-field select {
+  width: 100%;
+  min-height: 42px;
+  padding: 8px 10px;
+  border: 1px solid var(--ommp-line);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--ommp-ink);
+  font: inherit;
+}
+
+.ommp-field small {
+  color: var(--ommp-muted);
+}
+
+.ommp-inline-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(92px, 0.55fr);
+  gap: 10px;
+}
+
+.ommp-inline-fields label {
+  display: grid;
+  gap: 6px;
+  color: var(--ommp-blue-dark);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.ommp-wide-field {
+  grid-column: span 2;
+}
+
+.ommp-submit-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ommp-secondary-actions {
+  display: flex;
+  flex: 1 1 280px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ommp-primary-submit {
+  margin-left: auto;
+}
+
+.ommp-submit-row input,
+.ommp-submit-row button {
+  min-height: 42px;
+  padding: 9px 18px;
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--ommp-blue-dark);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ommp-submit-row input:hover,
+.ommp-submit-row button:hover {
+  background: #0f5475;
+}
+
+.ommp-step-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: ommp-steps;
+}
+
+.ommp-step-list li {
+  position: relative;
+  min-height: 86px;
+  padding: 15px 16px 15px 58px;
+  border: 1px solid var(--ommp-line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.ommp-step-list li::before {
+  counter-increment: ommp-steps;
+  content: counter(ommp-steps);
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--ommp-blue-dark);
+  font-weight: 700;
+}
+
+.ommp-step-list strong {
+  display: block;
+  color: var(--ommp-blue-dark);
+}
+
+.ommp-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.ommp-compact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.ommp-compact-actions a {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 16px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--ommp-blue-dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ommp-compact-actions a:hover {
+  background: #0f5475;
+}
+
+.ommp-mini-card {
+  padding: 16px;
+  border: 1px solid var(--ommp-line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.ommp-mini-card + .ommp-mini-card {
+  margin-top: 12px;
+}
+
+.ommp-mini-card strong {
+  display: block;
+  color: var(--ommp-blue-dark);
+  margin-bottom: 5px;
+}
+
+.ommp-topic-nav {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.ommp-topic-group {
+  display: grid;
+  grid-template-columns: 165px 1fr;
+  gap: 10px;
+  align-items: start;
+  padding: 14px;
+  border: 1px solid var(--ommp-line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.ommp-topic-label {
+  color: var(--ommp-blue-dark);
+  font-weight: 700;
+}
+
+.ommp-topic-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ommp-topic-links a {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: var(--ommp-blue-dark);
+  background: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 3px 9px rgba(9, 79, 118, 0.08);
+}
+
+.ommp-video-layout {
+  display: grid;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.ommp-video-section {
+  overflow: hidden;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: var(--ommp-shadow);
+}
+
+.ommp-video-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 18px;
+  color: var(--ommp-ink);
+  background: #dff6ff;
+  border-bottom: 1px solid var(--ommp-line);
+}
+
+.ommp-video-heading h2 {
+  margin: 0;
+  font-size: 1.18rem;
+  line-height: 1.25;
+}
+
+.ommp-top-link {
+  flex: 0 0 auto;
+  color: var(--ommp-blue-dark);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ommp-video-items {
+  display: grid;
+}
+
+.ommp-video-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.35fr);
+  gap: 16px;
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--ommp-line);
+  border-left: 6px solid #66ccff;
+  background: #eefbff;
+}
+
+.ommp-video-card:last-child {
+  border-bottom: 0;
+}
+
+.ommp-video-card:hover {
+  background: #e4f7ff;
+}
+
+.ommp-video-section[id="Pythagoras"] .ommp-video-card,
+.ommp-video-section[id="Aehnlichkeit"] .ommp-video-card,
+.ommp-video-section[id="Strahlensaetze"] .ommp-video-card,
+.ommp-video-section[id="Trigo1"] .ommp-video-card,
+.ommp-video-section[id="TrigoFkt"] .ommp-video-card,
+.ommp-video-section[id="Stereo"] .ommp-video-card {
+  border-left-color: #b9d879;
+  background: #f4f9e8;
+}
+
+.ommp-video-section[id="Pythagoras"] .ommp-video-card:hover,
+.ommp-video-section[id="Aehnlichkeit"] .ommp-video-card:hover,
+.ommp-video-section[id="Strahlensaetze"] .ommp-video-card:hover,
+.ommp-video-section[id="Trigo1"] .ommp-video-card:hover,
+.ommp-video-section[id="TrigoFkt"] .ommp-video-card:hover,
+.ommp-video-section[id="Stereo"] .ommp-video-card:hover {
+  background: #edf6d8;
+}
+
+.ommp-video-section[id^="Vgeo"] .ommp-video-card {
+  border-left-color: #f2c85b;
+  background: #fff8df;
+}
+
+.ommp-video-section[id^="Vgeo"] .ommp-video-card:hover {
+  background: #fff0bf;
+}
+
+.ommp-video-section[id="Kombinatorik"] .ommp-video-card,
+.ommp-video-section[id="Wkeit-Baeume-4F"] .ommp-video-card,
+.ommp-video-section[id="BedingteWkeit"] .ommp-video-card,
+.ommp-video-section[id="Erwartungswert"] .ommp-video-card,
+.ommp-video-section[id="BinomialVerteilung"] .ommp-video-card,
+.ommp-video-section[id="BeschrStat"] .ommp-video-card {
+  border-left-color: #ee9f9f;
+  background: #fff0f0;
+}
+
+.ommp-video-section[id="Kombinatorik"] .ommp-video-card:hover,
+.ommp-video-section[id="Wkeit-Baeume-4F"] .ommp-video-card:hover,
+.ommp-video-section[id="BedingteWkeit"] .ommp-video-card:hover,
+.ommp-video-section[id="Erwartungswert"] .ommp-video-card:hover,
+.ommp-video-section[id="BinomialVerteilung"] .ommp-video-card:hover,
+.ommp-video-section[id="BeschrStat"] .ommp-video-card:hover {
+  background: #ffe4e4;
+}
+
+.ommp-video-card:has(img[src*="Ordner_icon"]) {
+  border-left-color: #79c96a;
+  background: #f0faec;
+}
+
+.ommp-video-card:has(img[src*="Ordner_icon"]):hover {
+  background: #e5f6dd;
+}
+
+.ommp-video-description {
+  min-width: 0;
+}
+
+.ommp-video-description img {
+  max-width: 28px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.ommp-video-description font {
+  color: inherit;
+}
+
+.ommp-video-link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.ommp-video-link a {
+  display: inline-flex;
+  max-width: 100%;
+  min-height: 36px;
+  align-items: center;
+  padding: 7px 11px;
+  border-radius: 999px;
+  color: var(--ommp-blue-dark);
+  background: var(--ommp-sky);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.ommp-video-link a:hover {
+  background: var(--ommp-blue);
+}
+
+.ommp-video-link img {
+  max-width: 28px;
+  height: auto;
+}
+
+.ommp-empty-link {
+  color: var(--ommp-muted);
+  font-size: 0.92rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 760px) {
+  .ommp-header,
+  .ommp-hero,
+  .ommp-form-grid,
+  .ommp-overview-grid,
+  .ommp-topic-group,
+  .ommp-video-card {
+    grid-template-columns: 1fr;
+  }
+
+  .ommp-header {
+    display: grid;
+    justify-items: start;
+  }
+
+  .ommp-nav {
+    justify-content: flex-start;
+  }
+
+  .ommp-main-actions,
+  .ommp-points,
+  .ommp-module-grid,
+  .ommp-school-logos {
+    grid-template-columns: 1fr;
+  }
+
+  .ommp-wide-field {
+    grid-column: auto;
+  }
+
+  .ommp-shell {
+    border-radius: 22px 44px 24px 44px;
+  }
+
+  .ommp-submit-row,
+  .ommp-secondary-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .ommp-primary-submit {
+    margin-left: 0;
+  }
+
+  .ommp-video-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

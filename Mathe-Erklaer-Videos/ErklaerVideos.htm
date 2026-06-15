@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mathe-Erklärvideos</title>
+<meta name="author" content="Xaver Ommp">
+<meta name="keywords" content="Lernvideos Mathematik">
+<meta name="description" content="Flipped Classroom, Mathematik Erklär-Videos, Herleitungen, Beispiele, Kommentare, Übungsvideos">
+<link rel="stylesheet" href="../o_pruefungen_session/css-ommp/ommp-redesign.css">
+<script src="https://www.ommp.info/o_pruefungen_session/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body class="ommp-site">
+  <div class="ommp-page" id="TOP">
+    <main class="ommp-shell">
+      <div class="ommp-content">
+        <header class="ommp-header">
+          <a class="ommp-brand" href="../index.html" aria-label="OMMP Startseite">
+            <span class="ommp-mark">P</span>
+            <span>
+              <span class="ommp-brand-text">OMM<em>P</em></span>
+              <span class="ommp-brand-sub">Online Mathe Module Prüfungen</span>
+            </span>
+          </a>
+          <nav class="ommp-nav" aria-label="Navigation">
+            <a href="../index.html">Startseite</a>
+            <a href="../o_pruefungen_session/login_module/login_schulen.html">Übungsmodule</a>
+            <a href="https://sternenwind.ch/Kontakt/kohl.php" target="kontakt">Kontakt</a>
+          </nav>
+        </header>
+
+        <section class="ommp-hero" aria-labelledby="video-title">
+          <div>
+            <p class="ommp-kicker">Mathe lernen mit OMMP</p>
+            <h1 id="video-title" class="ommp-title">Erklär-Videos, Herleitungen, Theorie</h1>
+            <p class="ommp-lead">Thema auswählen, Video öffnen, selbst rechnen und die Lösung vergleichen. Die ursprünglichen Video- und Materiallinks bleiben erhalten.</p>
+          </div>
+          <figure class="ommp-book">
+            <img src="../o_pruefungen_session/login_module/user/buch-skizze.jpg" alt="OMMP Buch-Skizze">
+            <figcaption>Videos für Schuljahre 9 bis 12</figcaption>
+          </figure>
+        </section>
+
+        <section class="ommp-section ommp-panel" aria-labelledby="topics-title">
+          <h2 id="topics-title">Themen-Navigation</h2>
+          <div class="ommp-topic-nav">
+          <div class="ommp-topic-group">
+            <div class="ommp-topic-label">Grundlagen:</div>
+            <div class="ommp-topic-links"><a href="#Algebra">Algebra</a>;  <a href="#Brueche">Brüche</a>; <a href="#Bruchterme">Bruchterme</a>; <a href="#Prozent">Prozent</a>; <a href="#Faktorisieren">Faktorisieren</a>; <a href="#Potenzgesetze"> Potenzen</a>; <a href="#Stellenwert"> Stellenwertsysteme</a>; <a href="#LinFkt">Lineare Funktion</a>; <a href="#WrzlFkt"> Wurzel Funktion</a>; <a href="#QuadrGL"> Quadratische Gleichung </a>;  <a href="#QuadrFkt"> Quadratische Funktion</a>; <a href="#LogGL">Logarithmen</a>; <a href="#ExpGL"> Exp-Gleichungen</a>; <a href="#ExpFkt">Exponentialfunktion</a>;</div>
+          </div>
+          <div class="ommp-topic-group">
+            <div class="ommp-topic-label">Geometrie</div>
+            <div class="ommp-topic-links"><a href="#Pythagoras">Pythagoras</a>; <a href="#Aehnlichkeit">Z-Streckung, Ähnlichkeit</a>; <a href="#Strahlensaetze">Strahlensaetze</a>;  <a href="#Trigo1">Trigonometrie</a>;  <a href="#TrigoFkt">Trigonometrische Funktion</a>; <a href="#Stereo">Stereometrie</a>; </div>
+          </div>
+          <div class="ommp-topic-group">
+            <div class="ommp-topic-label">Vektorgeometrie</div>
+            <div class="ommp-topic-links"> <a href="#Vgeo1">Vgeo 1</a>; <a href="#Vgeo_Gerade">Gerade</a>; <a href="#Vgeo_Winkel">Winkel</a>; <a href="#Vgeo_V_Produkt">Vektorprodukt</a>; <a href="#Vgeo_Ebene">Ebene</a>; <a href="#Vgeo_Abstaende">Abstände</a>; </div>
+          </div>
+          <div class="ommp-topic-group">
+            <div class="ommp-topic-label">Analysis</div>
+            <div class="ommp-topic-links"> <a href="#FolgenReihen"> Folgen &amp; Reihen</a>; <a href="#graphisch_Ableiten"> graphisches Ableiten</a>; <a href="#Analysis1"> Ableitungen</a>;  <a href="#Analysis2">Ableitungeregeln</a>; <a href="#Kurvendiskussion">Kurvendiskussion</a>; <a href="#Extremwertaufgaben">Extremwertaufgaben</a>; <a href="#Analysis3">Ableitung spezieller Funktionen</a>;<a href="#Analysis-Integrale"> Integrale</a>; </div>
+          </div>
+          <div class="ommp-topic-group">
+            <div class="ommp-topic-label">Wahrscheinlichkeit</div>
+            <div class="ommp-topic-links"> <a href="#Kombinatorik">Kombinatorik</a>; <a href="#Wkeit-Baeume-4F">Wahrscheinlichkeit Bäume / 4 Feldertafel</a>; <a href="#BedingteWkeit">Bedingte Wahrscheinlichkeit </a>; <a href="#Erwartungswert">Erwartungswert </a>; <a href="#BeschrStat">Beschreibende Statistik </a>; <a href="#BinomialVerteilung">Binomial-Verteilung</a>; </div>
+          </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="ommp-video-layout">
+        <section class="ommp-video-section">
+          <header class="ommp-video-heading">
+            <h2>Das Flipped Classroom Konzept</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Flipped Classroom, wie funktioniert das?<br>
+	betreute Übungszeit vergrössern, Gute Fragen mitbringen.
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/s9UA6Y4RzEI?sub_confirmation=1" target="erklaervideos">Flipped Classroom how to start.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Flipped Classroom: How to learn!<br>
+	Geschicktes Lernen, Tipps und Lernmethoden.<br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/Y4Yw_8GzGjs?sub_confirmation=1" target="erklaervideos">Flipped Classroom how to learn.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Flipped Classroom: Login zu den ommp-Modulen
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/Xo_KcmsxDjM?sub_confirmation=1" target="erklaervideos">Flipped Classroom ommp-login.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Algebra">
+          <header class="ommp-video-heading">
+            <h2>Rechenregeln, Algebra Theorie-Videos</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">  Rechnen 1: Rechenen-Gesetz Klammer vor Hoch vor Punkt vor Strich<br>Einstiegstest mit 50% Durchfallquote :-) Test Yourself
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/BQqVbPvzjLg?sub_confirmation=1" target="erklaervideos">Rechnen 1 KlaPoPuStri.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Rechnen 2: Die ersten 3 Potenzgesetze werden erklärt. <br> Übungen zum Nachrechnen werden kommentiert.  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/I7bHliaEmQY?sub_confirmation=1" target="erklaervideos">Rechnen 2 Potenzen.mp4</a><br></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Rechnen 3: Primfaktorzerlegung systematisch erklärt, ggT, kgV
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/nfj10Qvp3ic?sub_confirmation=1" target="erklaervideos">Rechnen 3 PFZ.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Rechnen 4: Distributivgesetz, Ausmultiplizieren, gemeinsame Faktoren ausklammern 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/U-P9eJGiaRw?sub_confirmation=1" target="erklaervideos">Rechnen 4 Distributiv.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Rechnen 5: Binomische Formeln und eine Übung zum Ausmultiplizieren.    
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/GdwYYp_1gS0?sub_confirmation=1" target="erklaervideos">Rechnen 5 Binom.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Brueche">
+          <header class="ommp-video-heading">
+            <h2>Bruchrechnen mit Zahlen, Theorie-Videos</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Bruch 1a: Brüche Kürzen und Erweitern  \( \frac{24}{9} = \frac{2 \cdot 2 \cdot 2 \cdot 3 }{3 \cdot 3} = \frac{8}{3}  \) <br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/IMG9LvaIltA?sub_confirmation=1" target="erklaervideos">Bruch 1a Erweitern.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Bruch 1b: Aus Summen nie, niemals nicht kürzen <br>Seit Jahrhunderten passieren folgende typische Fehler: 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/yhDFzYK8FUQ?sub_confirmation=1" target="erklaervideos">Bruch 1b Fehlerbilder.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Bruch 1c: Brüche Multiplizieren, Dividieren        \( \frac{a}{b} : \frac{c}{d} = \ \ ? \) <br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/zSzJVPoh6Iw?sub_confirmation=1" target="erklaervideos">Bruch 1c Mult Div.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Bruch 1d: Hauptnenner beim Bruchrechnen, das  legendäre   k g V  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/M5i19aVmm48?sub_confirmation=1" target="erklaervideos">Bruch 1d kgV_1.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Bruch 1e: Brüche Addieren, Subtrahieren        \( \frac{a}{b} +  \frac{c}{d} = \ \ ? \) <br>Regeln verstehen und umsetzen, ein Beitrag an die Demokratie :-)
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/m0El3eZzYlQ?sub_confirmation=1" target="erklaervideos">Bruch 1e Add Sub.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Bruch 2: Unterschied Term vs. Gleichung <br>
+	Das Bild der Waage hilft, Operationen zu verstehen.
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/xVADN7z4B_I?sub_confirmation=1" target="erklaervideos">Bruch 2 Term vs Gleichung.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Bruch 3: Übungsvideo für einfache Terme, Brüche, Gleichungen
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/CU6OmGb7gd4?sub_confirmation=1" target="erklaervideos">Bruch 3 Übung Term_Bruch.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Bruch 4: Fehlerkultur und Fehler-Analyse von Fehlern der Jahrhunderte
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/NImf37RMMUQ?sub_confirmation=1" target="erklaervideos">Bruch 4 Fehleranalyse.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Prozent">
+          <header class="ommp-video-heading">
+            <h2>Prozentrechnen, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Prozent 1: Prozent als Bruch erkennen \( 45 \% = \frac{45}{100} = 0,45 \)
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/yawKAmZ0C54?sub_confirmation=1" target="erklaervideos">Prozent 1.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Prozent 2: Startwert · <font color="orange">Faktor</font>  = Endwert        oder <br> Grundwert · Prozentsatz = Prozentwert   
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/ZCxSyse5nGI?sub_confirmation=1" target="erklaervideos">Prozent 2.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Faktorisieren">
+          <header class="ommp-video-heading">
+            <h2>Faktorisieren mit Variablen, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description"> <img src="../Mathe-Stoffplaene/Unterlagen/scans/Ordner_icon.png" width="20"> <!-- <a href="../Mathe-Stoffplaene/Unterlagen/Algebra/xyz?.pdf" target="unterlagen">Faktorisieren.pdf</a> --> </div>
+              <div class="ommp-video-link"><span class="ommp-empty-link">Kein Link hinterlegt</span></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Faktorisieren 1: Drei Methoden zum Faktorisieren werden erläutert.
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/PShufpdjtMQ?sub_confirmation=1" target="erklaervideos">Faktorisieren 1.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Faktorisieren 2: Faktorisieren eines Terms mit Hilfe der Polynomdivision 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/eaN6WlbvSHU?sub_confirmation=1" target="erklaervideos"> Polynomdivision.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Faktorisiere mit den bekannten Möglichkeiten: \( 4n^2-m^2-p^2+2mp  \) 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/Xfg7Goqdxi8?sub_confirmation=1" target="erklaervideos">Faktorisieren_Kombi1.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Faktorisiere mit den bekannten Möglichkeiten: \( 5a^2 - 20x^2 + 40a + 80  \) 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/hsl4Xq3HZdc?sub_confirmation=1" target="erklaervideos">Faktorisieren_Kombi2.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Faktorisieren mit Teilsummen, schwieriger   
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/VGiYTEkRKb4?sub_confirmation=1" target="erklaervideos">Faktorisieren_Kombi3.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Bruchterme">
+          <header class="ommp-video-heading">
+            <h2>Bruchterme mit Variablen, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description"><img src="../Mathe-Stoffplaene/Unterlagen/scans/Ordner_icon.png" width="20"> <!-- <a href="../Mathe-Stoffplaene/Unterlagen/Algebra/xyBruchtermeRamona.pdf" target="unterlagen">Bruchterme Dossier.pdf</a> --> </div>
+              <div class="ommp-video-link"><span class="ommp-empty-link">Kein Link hinterlegt</span></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Bruchnenner faktorisieren. Drei Methoden zum Faktorisieren werden erläutert.
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/PShufpdjtMQ?sub_confirmation=1" target="erklaervideos">01 Bruch Nenner faktorisieren.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Brüche mit Variablen: Wie berechnen wir den Hauptnenner?<br>kgV und ggT mit Variablen:    
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/6576HnE_z3Q?sub_confirmation=1" target="erklaervideos">02 kgV_ggT Var.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Bruchrechnen mit Variablen: kgV bestimmen und eine geschickte Umformung mit dem Faktor (-1) werden erklärt.  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/75mu9vYIv_A?sub_confirmation=1" target="erklaervideos">03 Bruch kgV Var-1.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Bruchrechnung \( \frac{a+b}{a^2-ab}-\frac{a-b}{ab+b^2}+\frac{a^2-3ab}{a^2b-b^3} \) mit Buchstabentermen wird systematisch kommentiert. Pause drücken, selbst rechnen, dann Lösung studieren.   
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/ElcTVlcrook?sub_confirmation=1" target="erklaervideos">04 Bruch Bsp .mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Bruch3 Modul mit Beispiellösung. Pause drücken, selbst rechnen, dann Lösung studieren.  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/HyGW99W7HfU?sub_confirmation=1" target="erklaervideos">05 Bruch3 Modul.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Bruchgleichung lösen. Zwei typische Fehlerbilder werden kommentiert.  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/u0c7JS5OX6o?sub_confirmation=1" target="erklaervideos">06 Bruch Gleichung 1.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Bruchgleichung Modul BruchGL_3 lösen.  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/eeEDrbxSo_I?sub_confirmation=1" target="erklaervideos">07 BruchGL_3 Modul.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description"><img src="../Mathe-Stoffplaene/Unterlagen/scans/Ordner_icon.png" width="20"> <a href="../Mathe-Stoffplaene/Unterlagen/Algebra/03_Brueche-zusammenfassen-Bsp5.pdf" target="unterlagen">Bruch-Terme vereinfachen Bsp5.pdf</a></div>
+              <div class="ommp-video-link"><span class="ommp-empty-link">Kein Link hinterlegt</span></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Potenzgesetze">
+          <header class="ommp-video-heading">
+            <h2>Potenzen, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description"><img src="../Mathe-Stoffplaene/Unterlagen/scans/Ordner_icon.png" width="20"> <a href="../Mathe-Stoffplaene/Unterlagen/Potenzen_Wurzeln/Potenz_mit_KomplettLoesungen.pdf" target="unterlagen">Potenzen Dossier mit Übungen und Lösungen.pdf</a>  </div>
+              <div class="ommp-video-link"><span class="ommp-empty-link">Kein Link hinterlegt</span></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Potenzen 1: Die ersten 3 Potenzgesetze werden erklärt. <br> Übungen zum Nachrechnen werden kommentiert.  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/I7bHliaEmQY?sub_confirmation=1" target="erklaervideos">Potenzen 1.mp4</a><br></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Potenzen 2:  Potenzen  \( a^\frac{p}{q} = \) ?  mit Brüchen im Exponent und mit negativem Exponenten werden begründet. Was ist 2<sup>-3</sup> ? Am Ende eine schwierige Übung zum Mitdenken.
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/w7MyuFriUPI?sub_confirmation=1" target="erklaervideos"> Potenzen 2.mp4</a> <input type="button" onclick="alert('Begründungen vgl. Video: \n\n -2^3 = -8  und 2^(-3) = 1/8 \n\n 8^(2/3) = 4  ')" value="Lösung :)"></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Stellenwert">
+          <header class="ommp-video-heading">
+            <h2>Stellenwertsysteme, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Algebra Stellenwertsystem: Addition mit einem Abakus.<br> Bedeutung des Übertrags in einer nächste Stelle  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/p_30667LGjU?sub_confirmation=1" target="erklaervideos"> Abakus Addition.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Algebra Stellenwertsystem: Subtraktion mit einem Abakus.<br> Bedeutung des Übertrags in einer nächste Stelle  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/OswDkkWmCUE?sub_confirmation=1" target="erklaervideos"> Abakus Subtraktion.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Algebra Stellenwertsystem: Multiplikation mit einem Abakus.<br> 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/_BhEzZqC-HY?sub_confirmation=1" target="erklaervideos"> Abakus Multiplikation.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Algebra Stellenwertsystem: Division mit einem Abakus.<br> 328 : 8 --&gt; Bedeutung des Übertrags in einer nächste Stelle  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/famyp-ff8TM?sub_confirmation=1" target="erklaervideos"> Abakus Division 328 durch 8 .mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Algebra Stellenwertsystem: Division mit Abakus mit Rest.<br> Division 249 : 8 --&gt; Rechnung mit Nachkommastellen  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/8Oi_veFL-sU?sub_confirmation=1" target="erklaervideos"> Abakus 249 durch 8.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Algebra Stellenwertsystem: Division im 5er System
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/H8PRxPF50gs?sub_confirmation=1" target="erklaervideos"> Division im 5er System.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Pythagoras">
+          <header class="ommp-video-heading">
+            <h2>Pythagoras, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Herleitung Höhensatz, Kathetensatz 
+	</div>
+              <div class="ommp-video-link"><a href="Grundlagen/Algebra/hoehensatz.mp4" target="erklaervideos">Höhen-Kath-Satz.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">PeripherieWinkelSatz Herleitung. (in Mundart, d.h. neu machen ) 
+	</div>
+              <div class="ommp-video-link"><!-- <a href="Grundlagen/Trigo/PeriphWsatz.mp4" target="erklaervideos"> Periph-Winkelsatz.mp4</a>--></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Aehnlichkeit">
+          <header class="ommp-video-heading">
+            <h2>Zentrische Streckung, Ähnlichkeit, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Zentrische Streckung Einführung.<br> Beweis der Winkeltreue und anderer Eigenschaften. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/dRTdAhdqqnY?sub_confirmation=1" target="erklaervideos"> Z-Streck 1.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Zentrische Streckung Übungen. <br>Konstruktionen mit Hilfslinien werden erklärt.
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/vVUJcD3JQFA?sub_confirmation=1" target="erklaervideos"> Z-Streck üben.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Ähnliche Figuren haben gleiche sich entsprechende Teilverhältnisse.  <br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/lreqxdPE5d4?sub_confirmation=1" target="erklaervideos"> Ähnlichkeit 1 .mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Strahlensaetze">
+          <header class="ommp-video-heading">
+            <h2>Strahlensaetze, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Strahlensätze werden hergeleitet. V-Figur und X-Figur. <br>Erste kommentierte Übungen.   <br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/jx73e2AhxPE?sub_confirmation=1" target="erklaervideos"> Str.sätze 1.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Trigo1">
+          <header class="ommp-video-heading">
+            <h2>Trigonometrie, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description"><img src="../Mathe-Stoffplaene/Unterlagen/scans/Ordner_icon.png" width="20"> <a href="../Mathe-Stoffplaene/Unterlagen/Trigo1/Trigo1_Dossier_Loesungen.zip" target="unterlagen">Dossier Trigo 1.zip</a> </div>
+              <div class="ommp-video-link"><span class="ommp-empty-link">Kein Link hinterlegt</span></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Sinus, Cosinus, Tangens werden definiert.<br>
+	Erste Übungen werden erläutert. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/a7E1B09saig?sub_confirmation=1" target="erklaervideos"> Sin_Cos_Tan_Einführung.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Sin(), Cos(), Tan() im Einheitskreis. Verallgemeinerung auf Winkel von 0 ° bis 360°   
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/Bo_NSZdHrQU?sub_confirmation=1" target="erklaervideos"> Einheitskreis_1.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Sin(), Cos(), Tan() im Einheitskreis. Symmetrie-Beziehungen in den Quadranten  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/wAV6zlCFWB4?sub_confirmation=1" target="erklaervideos"> Einheitskreis_2.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Sin(), Cos(), Tan() im Einheitskreis. Bogenmass 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/EoMObGXlvQI?sub_confirmation=1" target="erklaervideos"> Einheitskreis_3.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Übungen im Einheitskreis. Bogenmass - Gradmass - Quadrantenbeziehungen: \( cos(118°)=sin(\alpha ) \)   
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/dtXjon3ugfU?sub_confirmation=1" target="erklaervideos"> Einheitskreis ueben.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Der Sinunssatz wird hergeleitet. Anwendung bei Dreiecksberechnungen.  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/5bp9Q0yP__o?sub_confirmation=1" target="erklaervideos"> Sinussatz.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Der Cosinussatz wird hergeleitet. Anwendung bei Dreiecksberechnungen.  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/YngAHv2tVUQ?sub_confirmation=1" target="erklaervideos"> Cosinussatz.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Der Cosinussatz ist der allgemeine Satz des Pythagoras:<br> Ein schöner Zusammenhang wird mit Geogebra demonstriert.  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/Z7toq3vYEx8?sub_confirmation=1" target="erklaervideos"> Cos.Satz und Pythagoras.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Beim Dreieck SSW  werde 4 mögliche Fälle beschrieben. Kontruktive Überlegungen und Rechnung mit Sinus- und Kosinussatz werden erläutert.
+	</div>
+              <div class="ommp-video-link"><br><a href="https://youtu.be/uhuRtB1tGM0?sub_confirmation=1" target="erklaervideos"> Dreieck SSW.mp4</a><br><br><br><br></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Eine kommentierte Übung zum Modul Dreieck SSW. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/u8hdbkzvFWE?sub_confirmation=1" target="erklaervideos"> Übung Dreieck ssw.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Herleitung zum Peripheriewinkelsatz: \( \mu = 2\cdot \varphi \)
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/rL043-Xb7cg?sub_confirmation=1" target="erklaervideos"> Herleitung PW Satz.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Herleitung zum Sinunssatz-Zusammenhang \( a/sin(\alpha) = 2\cdot r \)
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/_OO_DkKm1vU?sub_confirmation=1" target="erklaervideos"> Sinsatz - Zusammenhang.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Eine kommentierte Übung zum Peripheriewinkelsatz: \( \mu = 2\cdot \varphi \) <br>Modul PW Satz. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/4CeamLjsUa0?sub_confirmation=1" target="erklaervideos"> Übung PW Satz.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Vermessungs Methode Vorwärts Einschneiden. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/vlWkcR9rPAQ?sub_confirmation=1" target="erklaervideos"> Vorwärts-Einschneiden.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Vermessungs Methode Rückwärts Einschneiden (mit Hilfe der Ähnlichkleit). 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/Qy3m9Nraxqc?sub_confirmation=1" target="erklaervideos"> Rückwärts-Einschneiden.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Überblick von Strahlensätzen zu Trigo, zu Sin/cos Satz 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/4JIvfk-H-u8?sub_confirmation=1" target="erklaervideos"> Trigo-Überblick.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="TrigoFkt">
+          <header class="ommp-video-heading">
+            <h2>Trigo Funktion, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Trigo: Trigonometrische Funktionen untersuchen. Amplitude, Periode, Frequenz, Verschiebungen, Nullstellen, HOP, TIP 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/AH-EM_8AC1M?sub_confirmation=1" target="erklaervideos"> Trigo-Fkt1.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description"><img src="../Mathe-Stoffplaene/Unterlagen/scans/Ordner_icon.png" width="20"> <!-- <a href="../Mathe-Stoffplaene/Unterlagen/Algebra/xyz?.pdf" target="unterlagen">Stereometrie Einführung.pdf</a> --></div>
+              <div class="ommp-video-link"><span class="ommp-empty-link">Kein Link hinterlegt</span></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Stereo">
+          <header class="ommp-video-heading">
+            <h2>Stereometrie, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Stereo: Überblick über die einfachen Grundkörper und deren Volumen. Eine Zylinderaufgabe wird besprochen. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/tuor1F_T8zs?sub_confirmation=1" target="erklaervideos"> Stereo 1 Zylinder.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Stereo: Räumliche Vorstellung wird geübt. Eine Pyramidenaufgabe wird gelöst. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/4fQ1fwtCswY?sub_confirmation=1" target="erklaervideos"> Stereo 2 Pyramide.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Stereo: Herleitung Pyramiden-Volumen \( Vol = \frac{1}{3} \cdot G \cdot h \) .<br> Prinzip von Cavalieri. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/D-Ad9sw7J_Q?sub_confirmation=1" target="erklaervideos"> Stereo 3 Herleitung Vol_Pyr.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Stereo:  Innere Linien in einer Pyramide helfen beim Berechnen vom Volumen eines Pyramidenstumpfes. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/fNFeWPzMsSc?sub_confirmation=1" target="erklaervideos"> Stereo 4 PyramidenStumpf.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Stereo:  Herleitung vom Kegelvolumen  \( Vol = \frac{1}{3} \cdot G \cdot h \) <br>zuerst elementar und dann alternativ mit Integral.  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/9P2QzjnLD-c?sub_confirmation=1" target="erklaervideos"> Stereo 5 Kegelvolumen.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Stereo:  Mantelfläche vom Kegel \( M = r \cdot s \cdot \pi \) wird hergeleitet. <br>Anwendung in einer Kegelaufgabe  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/-xq1_XmLAUo?sub_confirmation=1" target="erklaervideos"> Stereo 6 Kegel Mantel.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description"><img src="../Mathe-Stoffplaene/Unterlagen/scans/Ordner_icon.png" width="20"> <!-- <a href="../Mathe-Stoffplaene/Unterlagen/Algebra/xyz?.pdf" target="unterlagen"> Lineare Funktion Einführung.pdf </a> --></div>
+              <div class="ommp-video-link"><span class="ommp-empty-link">Kein Link hinterlegt</span></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="LinFkt">
+          <header class="ommp-video-heading">
+            <h2>Lineare Funktion, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description"><img src="../Mathe-Stoffplaene/Unterlagen/scans/Ordner_icon.png" width="20"> <a href="../Mathe-Stoffplaene/Unterlagen/linFkt/01-Einstieg-Funktionenbegriff-Bsp-Fuba.pdf" target="unterlagen">01-Einstieg-Funktionenbegriff-Bsp-Fuba.pdf</a> </div>
+              <div class="ommp-video-link"><span class="ommp-empty-link">Kein Link hinterlegt</span></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description"><img src="../Mathe-Stoffplaene/Unterlagen/scans/Ordner_icon.png" width="20"> <a href="../Mathe-Stoffplaene/Unterlagen/linFkt/02-Lin_Fkt_Gr_Puzzle.zip" target="unterlagen"> Lineare Funktion Gruppenpuzzle.zip</a> </div>
+              <div class="ommp-video-link"><span class="ommp-empty-link">Kein Link hinterlegt</span></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Lineare Funktion: <br> Eine Gerade \( y = m \cdot x + q \) durch zwei Punkte aufstellen,<br> Wertetabelle, Schnittpunkt zweier Geraden berechnen <br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/hBRPomy6P5M?sub_confirmation=1" target="erklaervideos"> LinFkt 1a.mp4 </a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Lineare Funktion: <br> Nullstelle einer Geraden berechnen, y-Achsenabschnitt erkennen. Verschieben von Geraden, Geogebra-Simulation <br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/xaCene2Ab2w?sub_confirmation=1" target="erklaervideos"> LinFkt 1b.mp4 </a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Lineare Funktion: <br> Mittelpunkt zwischen zwei Punkten<br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/-vAeg4uaITk?sub_confirmation=1" target="erklaervideos"> LinFkt 1c.mp4 </a> <br><!-- Grundlagen/LinFkt/linFkt1c.mp4  --></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Lineare Funktion: <br> Streckenlänge zwischen zwei Punkten P unf F berechnen. <br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/J04SeL2TSvc?sub_confirmation=1" target="erklaervideos"> LinFkt 1d.mp4 </a> <br><!-- Grundlagen/LinFkt/linFkt1c.mp4  --></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Lineare Funktion: <br> Senkrechte Steigung bestimmen. Höhengerade und Fläche vom Dreieck berechnen. <br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/p247mdThjXM?sub_confirmation=1" target="erklaervideos"> LinFkt 2a.mp4 </a> <!-- Grundlagen/LinFkt/linFkt2.mp4  --></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Lineare Funktion: <br> Spezielle Geraden x = k, Steigungswinkel einer Geraden,<br> Schnittwinkel zwischen zwei Geraden berechnen <br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/M-54KDkleUw?sub_confirmation=1" target="erklaervideos"> LinFkt 2b.mp4 </a> <br><!-- Grundlagen/LinFkt/linFkt2b.mp4  --></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Lineare Funktion: <br> Übungsphase zu den 6 Standardaufgaben.<br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/-9P7P7GyvxE?sub_confirmation=1" target="erklaervideos"> LinFkt 3a.mp4 </a> <br><!-- Grundlagen/LinFkt/linFkt2.mp4  --></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Lineare Funktion: <br>Mittelpunkt, Mittelsenkrechte, Umkreisradius berechnen<br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/r-kW7OFHkq4?sub_confirmation=1" target="erklaervideos"> LinFkt 3b.mp4 </a> <!-- Grundlagen/LinFkt/linFkt-Nst.mp4 --></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Lineare Funktion: <br> Nullstellen von Seitenhalbierende, Mittelsenkrechte berechnen<br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/_avG_iBxssk?sub_confirmation=1" target="erklaervideos"> LinFkt 4.mp4 </a> <!-- Grundlagen/LinFkt/linFkt-Nst.mp4 --></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Lineare Funktion: <br> Überblick der wichtigsten Fachbegriffe mit einem Beispiel erläutert<br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/JDDyscKQtj0?sub_confirmation=1" target="erklaervideos"> LinFkt Ü-Blick.mp4 </a> <!-- Grundlagen/LinFkt/linFkt-ueBlick1.mp4 --></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">LGS: Lineare Gleichungssysteme 2 x 2 <br> Ist die Gerade 2x+y=7 parallel oder identisch zu 4x+2y=7 ? <br><font color="#cccccc">Lösung erst nach dem Video ansehen</font>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/94rT0QOyhAw?sub_confirmation=1" target="erklaervideos"> LGS 2x2.mp4</a>  <!--  -->  <input type="button" onclick="alert(' Lösung:\n\n 2x+y=7  ist parallel zu 4x+2y=7 \n\n  2x+y=7 ist identisch zu  4x+2y=14 \n\n')" value="Lösung :)">  <!-- Grundlagen/Algebra/LGS-2x2.mp4 --></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">LGS: Lineare Gleichungssysteme 3 x 2 <br> 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/OEGZOgimkJs?sub_confirmation=1" target="erklaervideos"> LGS 3x2.mp4</a>  <!-- Grundlagen/LinFkt/LGS_3x2.mp4 --></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">LGS: Lineare Gleichungssysteme 3 x 3 <br>
+	Gaussches Dreiecksverfahren<br> 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/wFu2jh8wTxE?sub_confirmation=1" target="erklaervideos"> LGS 3x3.mp4</a>  <!--  --></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="WrzlFkt">
+          <header class="ommp-video-heading">
+            <h2>Wurzel Funktion, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description"><img src="../Mathe-Stoffplaene/Unterlagen/scans/Ordner_icon.png" width="20"><a href="../Mathe-Stoffplaene/Unterlagen/WGL_WFkt/QWrzl_WFkt_WGL.pdf" target="unterlagen">Dossier Wurzeln und Wurzel-Funktion.pdf</a> </div>
+              <div class="ommp-video-link"><span class="ommp-empty-link">Kein Link hinterlegt</span></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Potenzgesetze <--> Wurzelgesetze <br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/b4zqnpJnxoc?sub_confirmation=1" target="erklaervideos"> W-Gesetze.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Wurzelfunktion 1: \( f(x)=a\cdot \sqrt{b\cdot(x+c)}+d \)<br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/RVdeHglrbjk?sub_confirmation=1" target="erklaervideos"> W-Fkt1 Verschiebungen.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Wurzelfunktion 2: Definitions-  und Wertebereich<br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/O8vLqE91J_8?sub_confirmation=1" target="erklaervideos"> W-Fkt2 Def. W.bereich.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Wurzelfunktion 2a: \( f(x)=a\cdot \sqrt{b\cdot(x+c)}+d \)<br>Funktionsgleichung aufstellen.
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/1X5tHiD3JCg?sub_confirmation=1" target="erklaervideos"> W-Fkt 2a Fkt-aufstellen.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Wurzelfunktion 3: Nullstellen, Schnittprobleme<br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/660vfnJVxak?sub_confirmation=1" target="erklaervideos"> W-Fkt3 Nst.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Wurzelgleichungen lösen: √  isolieren, quadrieren, kontrollieren<br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/PxGWLngR49I?sub_confirmation=1" target="erklaervideos"> W-Fkt4 W-Gleichungen.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Wurzelfunktion spiegeln an x- und y-Achse<br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/Wdu7uN9JN7A?sub_confirmation=1" target="erklaervideos"> W-Fkt5 Spiegelungen.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="QuadrGL">
+          <header class="ommp-video-heading">
+            <h2>Quadratische Gleichung, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description"><img src="../Mathe-Stoffplaene/Unterlagen/scans/Ordner_icon.png" width="20"> <a href="../Mathe-Stoffplaene/Unterlagen/qGL/QGl_Einfuehrung.pdf" target="unterlagen">Q GL Einführung.pdf</a>  </div>
+              <div class="ommp-video-link"><span class="ommp-empty-link">Kein Link hinterlegt</span></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Q. Gleichung lösen: Einführung<br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/URVeYUqNPpA?sub_confirmation=1" target="erklaervideos"> qGL Einführung.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Q. Gleichung: Herleitung der Mitternachtsformel<br>
+	Mit Hilfe der quadratischen Ergänzung
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/Vy_pl9VNArM?sub_confirmation=1" target="erklaervideos"> qGL MF Herleitung.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Q. Gleichung:  Fallunterscheidung<br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/xW08jc9aA7E?sub_confirmation=1" target="erklaervideos"> qGL Fälle.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="QuadrFkt">
+          <header class="ommp-video-heading">
+            <h2>Quadratische Funktion, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Q. Funktion: Hauptform \( f(x)=ax^2+bx+c \)<br> Wertetabelle, Schaubild, Nullstellen<br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/uc0bFKjwgho?sub_confirmation=1" target="erklaervideos"> qFkt 1 Einfuehrung.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Q. Funktion: Hauptform \( f(x)=ax^2+bx+c \)<br>Parameter a, b, c und \( x_s = \frac{-b}{2a} \) anschaulich mit Geogebra erläutert, Parabeln skizzieren <br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/V2P4WIpoAhw?sub_confirmation=1" target="erklaervideos"> qFkt 2 abc.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Q. Funktion: Schnittproblem lösen<br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/mzUpkRunUNA?sub_confirmation=1" target="erklaervideos"> qFkt 3 Schnitt.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Q. Funktion: Scheitelpunktform \( s(x)=a \cdot (x + d)^2 + e   \) <br>mit Scheitel \( S(-d/e) \)<br> 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/e928VtLF35w?sub_confirmation=1" target="erklaervideos"> qFkt 4 Scheitelp_Form.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Q. Funktion: Faktorisierte Form: \( h(x)= a \cdot (x -n_1) \cdot (x-n_2) \)  <br> 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/ks0dN0PaD9Q?sub_confirmation=1" target="erklaervideos"> qFkt_5_Faktorisierte Form.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description"><img src="../Mathe-Stoffplaene/Unterlagen/scans/Ordner_icon.png" width="20"> <a href="../Mathe-Stoffplaene/Unterlagen/qFkt/01_GPuzzle_qFkt.zip" target="unterlagen">Q Fkt Gruppenpuzzle.zip</a> Übungen mit Lösungen </div>
+              <div class="ommp-video-link"><span class="ommp-empty-link">Kein Link hinterlegt</span></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Quadratische Funktion:  Überblick<br>
+	</div>
+              <div class="ommp-video-link"><a href="Grundlagen/qFkt/qFkt-ueblick2.mp4" target="erklaervideos"> qFkt_Üblick.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="LogGL">
+          <header class="ommp-video-heading">
+            <h2>Logarithmengesetze, Log-Gleichungen, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Logarithmen: Der Begriff des Logarithmus. <br>
+	Herleitung zu den Logarithmen-Gesetzen analog zu den Potenzgesetzen. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/U2J2SaTPcEc?sub_confirmation=1" target="erklaervideos"> Loggesetze.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Logarithmen: Beispiel zum Basiswechselsatz anwenden 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/74DwrCXKCFQ?sub_confirmation=1" target="erklaervideos"> Log-BWS.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Logarithmus Gleichung: Log - Gesetze anwenden, Exponenzieren
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/HfanThtpzqM?sub_confirmation=1" target="erklaervideos"> Log-Gleichung1.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="ExpGL">
+          <header class="ommp-video-heading">
+            <h2>Exponential Gleichungen, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Exponential Gleichung: Umformen, Logarithmieren, 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/Zi4uPDKEvOI?sub_confirmation=1" target="erklaervideos"> Exp-Gleichung.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="ExpFkt">
+          <header class="ommp-video-heading">
+            <h2>Exponential Funktion, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Exponential-Funktion: Aufstellen einer Wachstumsfunktion, prozentuales Wachstum  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/YJe3w8GYUzM?sub_confirmation=1" target="erklaervideos"> Exp-Fkt.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Vgeo1">
+          <header class="ommp-video-heading">
+            <h2>Vektor Geometrie, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Die Raumvorstellung im 3 dimensionalen Koordinatensystem. Hilfslinien nutzen, um Punkte einzuzeichnen. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/WKDdVqOl1GU?sub_confirmation=1" target="erklaervideos"> Vgeo-Raumvorstellung.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Einführung der Grundbegriffe: OV, RV, Vektor-Addition, kollinear. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/x1qW5M66o28?sub_confirmation=1" target="erklaervideos"> Vgeo-Einführung.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: lineare Abhängigkeit von Richtungsvektoren:<br>Kollineare Vektoren, komplanare Vektoren. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/L-ayBtNIxEg?sub_confirmation=1" target="erklaervideos"> Vgeo-linAbhängig.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: lineare Abhängigkeit von Richtungsvektoren:<br>Eine wertvolle Übung im WürfelTurm. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/69l8fpXx-fM?sub_confirmation=1" target="erklaervideos"> Vgeo-Würfelturm.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: OV, RV, Mittelpunkt, Länge eines Vektors  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/IHtTZRDrsc0?sub_confirmation=1" target="erklaervideos"> Vgeo-Länge.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Richtungsvektor normieren, d.h. auf Länge 1 bringen  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/74_axOEHgCs?sub_confirmation=1" target="erklaervideos"> Vgeo RVnormieren.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Ortsvektor zum Schwerpunkt im Dreieck wird herleiten  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/4MtjAv4GuAk?sub_confirmation=1" target="erklaervideos"> Vgeo-Schwerpunkt.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Vgeo_Gerade">
+          <header class="ommp-video-heading">
+            <h2>V-Geo Geraden im Raum, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Die Parameterform der Geraden im Raum.  <br>
+	 \( \vec{r} = \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} + t \cdot \begin{pmatrix} v_1 \\ v_2 \\ v_3 \end{pmatrix}  \)
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/ZFSyuOlbaX8?sub_confirmation=1" target="erklaervideos"> Vgeo-P-Form.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Punktprobe   
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/veREfdtFtxw?sub_confirmation=1" target="erklaervideos"> Vgeo Punktprobe.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Die Geradengleichung verändern  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/KvfbkRUItEA?sub_confirmation=1" target="erklaervideos"> Vgeo P-form verändern.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Die senkrechte Projektion einer Geraden auf eine Koordinatenebene  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/5yE8kiLY-5s?sub_confirmation=1" target="erklaervideos"> Vgeo senkr. Projektion auf Exy.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Wir erzeugen einen senkrechten Richtungsvektor zu einem gegebenen Richtungsvektor. Zuerst im 2 Dimensionalen, dann im 3 Dimensionalen.
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/p9__vzZfq4Y?sub_confirmation=1" target="erklaervideos"> Vgeo-Senkrechter RV.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Spurpunkte von Geraden, Schnittpunkte zwischen zwei Geraden 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/JQQgl1X4ouI?sub_confirmation=1" target="erklaervideos"> Vgeo-Schnitt-Pkte.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Die gegenseitige Lage von Geraden im Raum beurteilen.   
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/eG_2NVnNatk?sub_confirmation=1" target="erklaervideos"> Vgeo-geg-Lage.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Vgeo_Winkel">
+          <header class="ommp-video-heading">
+            <h2>V-Geo Winkel, Skalarprodukt, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Das Skalarprodukt:       \( \vec{a} \cdot \vec{b} = |\vec{a}| \cdot |\vec{b}| \cdot cos( \gamma ) \) <br> Und auch:                              \( \vec{a} \cdot \vec{b} = a_1 b_1 + a_2 b_2 + a_3 b_3  \) <br> Herleitung und Anwendung. <br>   
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/Cqw3Vp6_koA?sub_confirmation=1" target="erklaervideos"> Vgeo-Skalarprodukt.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Raumvorstellung: Winkel und Vektorkomponenten in den 8 Raum-Quadranten erkennen und berechnen. Wie liegt z.B. \( \vec{v_{xy}} = ? \)   und  \( \vec{v_y} = ? \)   
+	</div>
+              <div class="ommp-video-link"><!-- <a href="...?sub_confirmation=1" target="erklaervideos"> Kraftvektor.mp4</a> --></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Vgeo_V_Produkt">
+          <header class="ommp-video-heading">
+            <h2>V-Geo Vektorprodukt, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Das Vektorprodukt, Herleitung und Anwendung: \( \vec{n} = \vec{a} \times \vec{b} \)   
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/wC3HlXNax0s?sub_confirmation=1" target="erklaervideos"> Vgeo-Vektorprodukt.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Der Betrag vom Normalenvektor entspricht der Fläche vom Parallelogramm. \( F = | \vec{n} | \)   
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/5GBeNrRW2Mo?sub_confirmation=1" target="erklaervideos"> LängeNormalenvektor.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Vgeo_Ebene">
+          <header class="ommp-video-heading">
+            <h2>V-Geo Ebene im Raum, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Wie funktioniert die Parameterform einer Ebene im Raum: <br>
+		  z.B.:  \( \vec{r} = \begin{pmatrix} 1 \\ 0 \\ 4 \end{pmatrix} + u \cdot \begin{pmatrix} 2 \\ 1 \\ 3 \end{pmatrix} + v \cdot \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix} \) <br>Übung zur Raumvorstellung, Punktprobe, Spurgeraden. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/w_s6Rv_4AU8?sub_confirmation=1" target="erklaervideos"> Parameterform Ebene.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Koordinatenform einer Ebene im Raum \( ax+by+cz+d=0 \) .<br>
+		Wobei  \( \vec{n} = \begin{pmatrix} a \\ b \\ c \end{pmatrix} \) der Normalenvektor zur Ebene ist.<br> Umwandlung Parameterform in Koordinatenform. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/jNHpRz9I9Z8?sub_confirmation=1" target="erklaervideos"> Vgeo-KoForm Ebene.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Schnittpunkt von Gerade mit Ebene berechnen. <br>Richtungsvektoren zum Vereinfachen kürzen. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/0_YAtMIs9yc?sub_confirmation=1" target="erklaervideos"> Vgeo Schnitt g E.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Schnittgerade zweier Ebenen bestimmen.<br>Zusatzbemerkung: Die Richtung der Schnittgeraden geschickt berechnen.
+		
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/8o56U432Y90?sub_confirmation=1" target="erklaervideos"> Vgeo-Schnitt_E<sub>1 </sub> E<sub>2 </sub> .mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Übungsvideo zu Gerade4: Raumvorstellung beüben. 
+		
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/q6cQwFbelZE?sub_confirmation=1" target="erklaervideos"> Vgeo-Geraden4 Modul.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Vgeo_Abstaende">
+          <header class="ommp-video-heading">
+            <h2>Vektor Geometrie Abstände, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Abstand Punkt - Ebene (ohne HNF, mit Loffusspunkt)
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/cxtn8Qqckfw?sub_confirmation=1" target="erklaervideos"> Vgeo-Abstand-P-E.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Die Hesse Normalform der Ebene, Herleitung, Anwendung:<br>
+	\( \ \ \ \ \ \ \ \ \ \ \ \  \frac{a x + b y + c z + d}{\sqrt{a^2 + b^2 + c^2}} = 0 \)
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/32jSTNlF0TE?sub_confirmation=1" target="erklaervideos"> Vgeo-HNF-Ebene.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Abstand Punkt - Gerade. Zwei Varianten werden am Beispiel erklärt. Herleitung einer Abstandsformel mit dem Vektorprodukt und Anwendung.  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/Wl6CMVynbf8?sub_confirmation=1" target="erklaervideos"> Vgeo-Abstand-P-g.mp4 </a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Abstand windschiefer Geraden   
+	</div>
+              <div class="ommp-video-link"><a href="Vgeo/Abstand-g1-g2.mp4" target="erklaervideos"> <!--  --> </a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Vgeo: Überblick Vektorgeometrie Grundlagen. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/vdCCorWOF0Q?sub_confirmation=1" target="erklaervideos"> Vgeo-Überblick.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="FolgenReihen">
+          <header class="ommp-video-heading">
+            <h2>Analysis Folgen und Reihen, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Folgen und Reihen: Herleitung arithmetische Reihe (=Partialsumme)  
+	</div>
+              <div class="ommp-video-link"><a href="Analysis/arithmreihe.mp4" target="erklaervideos">arithmReihe.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Folgen und Reihen: Herleitung geometrische Reihe (=Partialsumme)  
+	</div>
+              <div class="ommp-video-link"><a href="Analysis/geomReihe.mp4" target="erklaervideos">geomReihe.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Folgen und Reihen: Das Summenzeichen in der arithmetische Reihe, geometrische Reihe, Binomialverteilung  
+	</div>
+              <div class="ommp-video-link"><a href="Analysis/Summenzeichen.mp4" target="erklaervideos">Summenzeichen.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="graphisch_Ableiten">
+          <header class="ommp-video-heading">
+            <h2>Analysis, Graphisch Ableiten, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Graphisches Ableiten von \( f(x) \) ergibt \( f'(x) \) <br> Die Anschauung der Ableitungsfunktion . 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/a89n2Aid0y8?sub_confirmation=1" target="erklaervideos">Graphisches Ableiten.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Analysis1">
+          <header class="ommp-video-heading">
+            <h2>Analysis Ableitungen, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Graphisches Ableiten und erste Anwendung der Potenzregel beim Ableiten.   
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/q9srNgVPKbM?sub_confirmation=1" target="erklaervideos">Abl. Graphisch_Potregel.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Herleitung der h-Methode zum Ableiten und Beispiel  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/JCJdzv-XObA?sub_confirmation=1" target="erklaervideos">h-Methode.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Differenzenquotient --> Differentialquotient  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/eQ5APE7F6PQ?sub_confirmation=1" target="erklaervideos">Differentialquotient.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Beweis der Potenzregel beim Ableiten mit der h-Methode  
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/eU2suDkCbw8?sub_confirmation=1" target="erklaervideos">Beweis Ableitungsregel.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Tangente und Normale an eine Funktion <br>Nutze \( m_2 = \frac{-1}{m_1} \)
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/YZ2Uvtw60lg?sub_confirmation=1" target="erklaervideos"> Tangente_Normale.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Steckbriefaufgabe. Bestimmen von Funktionen 5ten oder 4ten Grades mit Hilfe von y-Achsensymmetrie oder Punktsymmetrie zum Ursprung und Punkten mit Ableitungen. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/NbeUjShp1QU?sub_confirmation=1" target="erklaervideos"> Steckbriefaufgabe.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Schnittwinkel berechnen mit drei Varianten. <br>1) Mit Steigungsdreieck 2) Mit Skalarprodukt 3) Mit Tangens-Winkelformel
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/LYD9Y4RJD_k?sub_confirmation=1" target="erklaervideos"> Schnittwinkel-Varianten.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Ableitungen nutzen und mit Hilfe der Steigungswinkel den Schnittwinkel zweier Funktionen berechnen. Nutze \( tan(\alpha ) = \frac{\delta y }{\delta x} \)
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/FqS4duajZ4E?sub_confirmation=1" target="erklaervideos"> Schnittwinkel-Modul.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Bedeutung der 2ten Ableitung zur Bestimmung von Hoch- und Tiefpunkten 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/-clnzfED77k?sub_confirmation=1" target="erklaervideos"> Abl_Hop_Tip.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Bedeutung vom Vorzeichenwechsel (VZW) der 2ten Ableitung zur Bestimmung von Wendepunkten 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/qAEO-9D-Aoc?sub_confirmation=1" target="erklaervideos"> VZW 2te Ableitung.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Ein FunktionenPuzzle. Welche Ableitungsfunktion gehört zu welcher Randfunktion ?   
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/y_sGGyBCYjA?sub_confirmation=1" target="erklaervideos"> Ableitungs-Puzzle.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Analysis2">
+          <header class="ommp-video-heading">
+            <h2>Analysis, Ableitungsregeln, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Produktregel wird hergeleitet: <br> \( f(x)=u(x) \cdot v(x) \)            →          \( f'(x) = u' \cdot v + u \cdot v' \) <br>Einführendes Anwendungsbeispiel.
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/CDWOT1uhC7I?sub_confirmation=1" target="erklaervideos"> Produktregel.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Quotientenregel wird hergeleitet:<br>
+	\( f(x)= \frac{z(x)}{n(x)} \)            →          \( f'(x) = \frac{n \cdot z' - z \cdot n' }{n^2} \) <br>Einführendes Anwendungsbeispiel.<br>
+	<i>Möglicher Merksatz </i>   😜   :<i> "(N Abl - Z Abl ) durch N<sup>2</sup>"</i>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/idrCsy-fpao?sub_confirmation=1" target="erklaervideos"> Quotientenregel.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Kettenregel wird hergeleitet<br>
+	\( f(x) = u( v(x) )  \)            →          \( f'(x) = u' (v(x) )  \cdot v'(x) \) <br>
+	Merkregel: <i>"äussere Ableitung mal innere Ableitung"</i>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/VBfj86DvUk4?sub_confirmation=1" target="erklaervideos"> Kettenregel.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Kurvendiskussion">
+          <header class="ommp-video-heading">
+            <h2>Kurvendiskussion, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Extrempunkte berechnen und Fläche mit Vgeo bestimmen. <br>Bsp. Modul Abl_extrem1 seed 322  
+	</div>
+              <div class="ommp-video-link"><a href="Analysis/Abl_extrem1-seed322.mp4" target="erklaervideos"> Abl_extrem1.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Wie bestimmt man Asymptoten 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/wha5JkW-ymY?sub_confirmation=1" target="erklaervideos"> Asymptoten.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Kurvendiskussion einer gebrochen rationalen Funktion <br>	\( f(x)= \frac{x^3}{(x^2-4)} \)
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/8-IVApUvHsM?sub_confirmation=1" target="erklaervideos"> K-disk-gebr-ratFkt.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Extremwertaufgaben">
+          <header class="ommp-video-heading">
+            <h2>Analysis, Extremwertaufgaben, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Einführung in Extremwertaufgaben am Beispiel "Volumen einer oben offenen Schachtel" <br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/A-H_ejdiwyg?sub_confirmation=1" target="erklaervideos"> Extremwertaufgabe Einführung.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis Übung: Extremwertaufgaben am Beispiel Fläche vom Rechteck mit Dreieck. <br>Ausnutzen der Nebenbedingungen. Ableitungsregeln korrekt anwenden. <br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/snbu71YBcZY?sub_confirmation=1" target="erklaervideos"> Extremwertaufgabe Übung 1.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis Übung: Schwierigere Extremwertaufgaben mit einer Ln-Funktion. Motivationsteil zum Glück. Dann am Ende werden mit einer Geogebra-Simulation viele Zusammenhänge aufgezeigt. Wertvolle Gesamtschau.<br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/aPjd8z7Zkig?sub_confirmation=1" target="erklaervideos">Extremwertaufgabe Übung 2.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Analysis3">
+          <header class="ommp-video-heading">
+            <h2>Analysis Ableitungen spezieller Funktionen, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Herleitung des Sinus-Additionstheorems. <br>
+	\( sin(\alpha + \beta) = \sin(\alpha)\cdot cos(\beta) + \cos(\alpha)\cdot sin(\beta) \)<br>
+	Dieses brauchen wir zur Herleitung der Ableitung der Sinusfunktion. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/h9cPyIgKACk?sub_confirmation=1" target="erklaervideos"> Sinus-Additionstheorem.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Herleitung der Ableitung der Sinus-Funktion mit der h-Methode.<br>
+	\( f(x) = sin( x ) \) abgeleitet ergibt \( f'(x) = cos( x ) \)<br>
+	 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/itM0peqltaQ?sub_confirmation=1" target="erklaervideos"> SinusFkt_Ableitung.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Herleitung der Ableitung der Cosinus-Funktion.<br>
+		Zwei Beweise werden angeboten. a) Mit Verschiebung b) Algebraisch. <br>
+	\( f(x) = cos( x ) \) abgeleitet ergibt \( f'(x) = -sin( x ) \)<br>
+	 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/zYLjI-q4Cao?sub_confirmation=1" target="erklaervideos"> CosinusFkt_Ableitung.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Die eulersche Zahle e ist der Grenzwert dieses Ausdrucks: <br>
+	\( \lim_{n \to \infty} (1+\frac{1}{n})^n = 2,7182 . . . = e \) <br>
+	 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/jWx06Gt7BQs?sub_confirmation=1" target="erklaervideos"> Die Zahle e .mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Umformung des Grenzwerts zur schnelleren Berechnung:  <br>
+	\( \lim_{n \to \infty} (1+\frac{1}{n})^n =  \sum_{k=0}^{n} \frac{1}{k!} = e \) <br>
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/TqjpIZkw7YM?sub_confirmation=1" target="erklaervideos"> Konvergenz der Reihe zu  e .mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Herleitung der Ableitung der e-Funktion mit der h-Methode.<br>
+	\( f(x) = e^x \) abgeleitet ergibt \( f'(x) = e^x \)<br>
+	 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/ef7FpDb2BdU?sub_confirmation=1" target="erklaervideos"> Ableitung der e-Funktion.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Herleitung der Ableitung der \( ln\)-Funktion mit implizitem Ableiten.<br>
+	\( f(x) = ln(x) \) abgeleitet ergibt \( f'(x) = \frac{1}{x} \)<br>
+	 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/EuDIsK6uVB0?sub_confirmation=1" target="erklaervideos"> Ableitung der ln-Funktion.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Analysis-Integrale">
+          <header class="ommp-video-heading">
+            <h2>Analysis Integrale, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Hauptsatz Diff & Int. rechnung. (noch erstellen)
+	</div>
+              <div class="ommp-video-link"><!-- <a href="Analysis/HDI.mp4" target="erklaervideos"> HDI Herleitung.mp4</a>--></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Herleitung Logarithmische Integration. Ableitung von Nenner ist im Zähler.
+	</div>
+              <div class="ommp-video-link"><a href="Analysis/Log-Int.mp4" target="erklaervideos"> Logarithmische Integration Herleitung.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Herleitung partielle Integration (noch erstellen)
+	</div>
+              <div class="ommp-video-link"><!-- <a href="Analysis/Part-Int.mp4" target="erklaervideos"> Partielle Integration.mp4</a>--></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Überblick Analysis Grundlagen. 
+	</div>
+              <div class="ommp-video-link"><a href="Analysis/UeBlick-Analysis.mp4" target="erklaervideos"> Überblick-Analysis.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Übungsvideo: Mittelschwere Maturaaufgabe mit e-Funktion und Fläche wird gelöst und kommentiert. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/4lKztrseUmI?sub_confirmation=1" target="erklaervideos"> e-Fkt Nr.22 Fläche.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Analysis: Übungsvideo: Teil b) e-Funktion und Rotationsvolumen wird gelöst und kommentiert. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/I_vNy3U1f9U?sub_confirmation=1" target="erklaervideos"> e-Fkt Nr.22 RotVol .mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Kombinatorik">
+          <header class="ommp-video-heading">
+            <h2>Kombinatorik Zählprinzipien, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Kombi: Zählprinzip Duplo, Zahlenschloss, Buchstaben 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/peGVmHG5exc?sub_confirmation=1" target="erklaervideos"> Kombi 1-3.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Kombi: Zählprinzip Lotto, Mississippi 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/2h5a3Dd6Ifg?sub_confirmation=1" target="erklaervideos"> Kombi 4-5.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Kombi: Schoggi Zählprinzip 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/tmCdG--RCDM?sub_confirmation=1" target="erklaervideos"> Kombi 6 Schoggi.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Kombi: Überblick der Zählprinzipien 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/GWD1ps-W15k?sub_confirmation=1" target="erklaervideos"> Kombi 7 Überblick.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Kombi: Lösungsgedanken zu Grundaufgaben 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/mJdq_UFpMMY?sub_confirmation=1" target="erklaervideos"> Kombi 8 Loesungsgedanken.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Kombi: Drei Lösungsstrategien zu Kombiaufgabe 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/uHE-IYvneIQ?sub_confirmation=1" target="erklaervideos"> Kombi 9 Loesungsstrategien.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Wkeit-Baeume-4F">
+          <header class="ommp-video-heading">
+            <h2>Wahrscheinlichkeit Bäume / 4 Felder Tafel, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">W'keit: W'keitsbaum mit Zuruecklegen
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/iHcC6f2e3pc?sub_confirmation=1" target="erklaervideos"> Wkeitsbaum-mitZuruecklegen.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">W'keit: W'keitsbaum ohne Zuruecklegen 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/x5J7q-msh5k?sub_confirmation=1" target="erklaervideos"> Wkeitsbaum-ohneZuruecklegen.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">W'keit: Venn-Diagramm-4FelderTafel 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/xvxK50gzgls?sub_confirmation=1" target="erklaervideos"> Venn-Diagramm-4FelderTafel.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">W'keit: Von der VierFelder Tafel zum W'keits Baum
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/Czv9vr-2U-E?sub_confirmation=1" target="erklaervideos"> VierFelder-Tafel-Baum.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="BedingteWkeit">
+          <header class="ommp-video-heading">
+            <h2>Bedingte Wahrscheinlichkeit, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">W'keit: Bedingte Wahrscheinlichkeit, Einfuehrung mit Mengenbild (Venn-Diagramm)
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/zyDxBr2Ib_s?sub_confirmation=1" target="erklaervideos"> Bed-Wkeit-Einfuehrung.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">W'keit: Bedingte Wahrscheinlichkeit und Vierfeldertafel 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/XGRIIYQvdfI?sub_confirmation=1" target="erklaervideos"> Bedingte-Wkeit-4FT.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">W'keit: Stochastische Unabhängigkeit zweier Ereignisse.
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/KraAa7uKdQ0?sub_confirmation=1" target="erklaervideos"> unabh_Ereignisse.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="Erwartungswert">
+          <header class="ommp-video-heading">
+            <h2>Erwartungswert, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">W'keit: Einführung in den Erwartungswert. <br>Wann ist ein Spiel fair? 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/m32ZO4LpTQM?sub_confirmation=1" target="erklaervideos"> Erwartungswert.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="BinomialVerteilung">
+          <header class="ommp-video-heading">
+            <h2>Binomial-Verteilung, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">W'keit: Binomial-Verteilung, Herleitung und 4 typische Anwendungen
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/pN7zRGQUiJU?sub_confirmation=1" target="erklaervideos"> BinVerteilung.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">W'keit: Binomial-Verteilung: Die 3 x "mindestens" Aufgabe. 
+	</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/z2fLBP4dHyA?sub_confirmation=1" target="erklaervideos"> BinV. 3 x mindestens.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">W'keit: Hypothesentest, linksseitig mit der Binomial-Verteilung</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/Fks26whEOt0?sub_confirmation=1" target="erklaervideos"> Hyp. Test linksseitig.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">W'keit: Hypothesentest, rechtsseitig mit der Binomial-Verteilung</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/JHvWsNe0VF4?sub_confirmation=1" target="erklaervideos"> Hyp. Test rechtsseitig.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">W'keit: Hypothesentest, beidseitig mit der Binomial-Verteilung</div>
+              <div class="ommp-video-link"><a href="https://youtu.be/35tm6KNS79w?sub_confirmation=1" target="erklaervideos"> Hyp. Test beidseitig.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">W'keit: Überblick Wahrscheinlichkeits Grundlagen. 
+	</div>
+              <div class="ommp-video-link"><a href="Wkeit/UeBlick-Wkeit.mp4" target="erklaervideos"> Überblick-Wkeit.mp4</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="ommp-video-section" id="BeschrStat">
+          <header class="ommp-video-heading">
+            <h2>Beschreibende Statistik, Theorie</h2>
+            <a class="ommp-top-link" href="#TOP">Top &uarr;</a>
+          </header>
+          <div class="ommp-video-items">
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Beschreibende Statistik: Varianz, Standardabweichung, Variationskoeffizient 	</div>
+              <div class="ommp-video-link"><a href="Statistik/Var-Stabwn.mp4" target="erklaervideos"> Varianz-Stabwn.mp4</a></div>
+            </article>
+            <article class="ommp-video-card">
+              <div class="ommp-video-description">Beschreibende Statistik: Normalverteilung, z-Werte Einfuehrung
+	</div>
+              <div class="ommp-video-link"><a href="Wkeit/NV-z-Werte-Einfuehrung.mp4" target="erklaervideos"> NV-z-Werte-Einfuehrung.mp4</a></div>
+            </article>
+          </div>
+        </section>
+    </div>
+
+    <footer class="ommp-footer">OMMP.sternenwind.ch &nbsp; Peter Kohl</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,291 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --ommp-blue: #66ccff;
+  --ommp-blue-dark: #176a93;
+  --ommp-sky: #e7f8ff;
+  --ommp-paper: #f6fbfd;
+  --ommp-white: #ffffff;
+  --ommp-ink: #103040;
+  --ommp-muted: #4d6875;
+  --ommp-line: rgba(23, 106, 147, 0.22);
+  --ommp-shadow: 0 16px 34px rgba(19, 91, 130, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ommp-ink);
+  background:
+    radial-gradient(720px 360px at 60px -80px, #ffffff 0, #e2f6ff 52%, transparent 53%),
+    linear-gradient(180deg, #eef8fc 0, var(--ommp-paper) 68%, #e9f0f3 100%);
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+body > center,
+body > div,
+body > form,
+body > table {
+  width: min(1080px, calc(100% - 28px));
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body > center:first-child,
+body > div:first-child,
+.ommp-exercise-shell {
+  margin-top: 22px;
+}
+
+h1,
+h2,
+h3,
+b,
+strong {
+  color: var(--ommp-blue-dark);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.18;
+  letter-spacing: 0;
+}
+
+a {
+  color: var(--ommp-blue-dark);
+  font-weight: 700;
+}
+
+table {
+  max-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 10px;
+  vertical-align: top;
+}
+
+body > table,
+form > table,
+.ommp-exercise-card,
+.aufgabe,
+.Aufgabe,
+#aufgabe,
+#Aufgabe,
+.module,
+.modul {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.86);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--ommp-shadow);
+}
+
+body > table,
+form > table {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+body > table table,
+form > table table {
+  border: 1px solid var(--ommp-line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+tr:first-child > th,
+tr:first-child > td[colspan],
+.ommp-exercise-header {
+  color: var(--ommp-ink);
+  background: #dff6ff;
+  font-weight: 700;
+}
+
+.ommp-exercise-shell {
+  width: min(1080px, calc(100% - 28px));
+  margin-right: auto;
+  margin-left: auto;
+  padding: 24px clamp(18px, 4vw, 38px) 34px;
+  border: 2px solid rgba(255, 255, 255, 0.76);
+  border-radius: 24px 58px 28px 58px;
+  background: linear-gradient(150deg, #88ddff 0, var(--ommp-blue) 48%, #4fc3f4 100%);
+  box-shadow: var(--ommp-shadow);
+}
+
+.ommp-exercise-toolbar,
+.navigation,
+.nav,
+#navigation,
+#nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 16px;
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.ommp-exercise-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.34fr);
+  gap: 16px;
+}
+
+.ommp-exercise-card,
+.aufgabe,
+.Aufgabe,
+#aufgabe,
+#Aufgabe,
+.module,
+.modul {
+  padding: 18px;
+}
+
+.ommp-task-title {
+  margin: 0 0 12px;
+  color: var(--ommp-blue-dark);
+}
+
+.ommp-answer-panel,
+.loesung,
+.lösung,
+.hinweis,
+.feedback,
+#loesung,
+#lösung,
+#hinweis,
+#feedback {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--ommp-line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+textarea,
+select {
+  max-width: 100%;
+  min-height: 42px;
+  padding: 8px 10px;
+  border: 1px solid var(--ommp-line);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--ommp-ink);
+  font: inherit;
+}
+
+textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+.button,
+a.button {
+  min-height: 40px;
+  padding: 9px 16px;
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--ommp-blue-dark);
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.button:hover,
+a.button:hover {
+  background: #0f5475;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 1.1em;
+  height: 1.1em;
+  accent-color: var(--ommp-blue-dark);
+}
+
+font {
+  color: inherit;
+  font-family: inherit;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  background: var(--ommp-line);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.richtig,
+.ok,
+.success,
+.korrekt {
+  color: #256b31;
+  font-weight: 700;
+}
+
+.falsch,
+.error,
+.fehler {
+  color: #9a2d2d;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  body {
+    font-size: 15px;
+  }
+
+  .ommp-exercise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ommp-exercise-shell {
+    border-radius: 22px 44px 24px 44px;
+  }
+
+  td,
+  th {
+    display: block;
+    width: 100%;
+  }
+
+  input[type="submit"],
+  input[type="button"],
+  button,
+  .button,
+  a.button {
+    width: 100%;
+  }
+}

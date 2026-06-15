@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Peter Kohl">
+<title>login_schulen</title>
+<link rel="stylesheet" href="../css-ommp/ommp-redesign.css">
+</head>
+<body class="ommp-site">
+  <div class="ommp-page">
+    <main class="ommp-shell">
+      <div class="ommp-content">
+        <header class="ommp-header">
+          <a class="ommp-brand" href="../../index.html" aria-label="OMMP Startseite">
+            <span class="ommp-mark">P</span>
+            <span>
+              <span class="ommp-brand-text">OMM<em>P</em></span>
+              <span class="ommp-brand-sub">Online Mathe Module Prüfungen</span>
+            </span>
+          </a>
+          <nav class="ommp-nav" aria-label="Navigation">
+            <a href="../../index.html">Startseite</a>
+            <a href="../ueberblick_o_pruefungen_2.html">Prüfungen</a>
+            <a href="../../Mathe-Erklaer-Videos/ErklaerVideos.htm">Videos</a>
+            <a href="https://sternenwind.ch/Kontakt/kohl.php" target="kontakt">Kontakt</a>
+          </nav>
+        </header>
+
+        <section class="ommp-hero" aria-labelledby="login-title">
+          <div>
+            <p class="ommp-kicker">Herzlich willkommen zum Üben</p>
+            <h1 id="login-title" class="ommp-title">Login zu Mathe OMM<em>P</em></h1>
+            <p class="ommp-lead">Wähle deine Schule aus und starte die Online-Mathe-Module. Für einen freien Testzugang kann die Übungsschule gewählt werden.</p>
+          </div>
+
+          <figure class="ommp-book">
+            <img src="user/buch-skizze.jpg" alt="OMMP Buch-Skizze">
+            <figcaption>Üben, prüfen, verstehen</figcaption>
+          </figure>
+        </section>
+
+        <section class="ommp-section ommp-panel" aria-labelledby="school-title">
+          <div class="ommp-form-grid">
+            <div class="ommp-login-box ommp-card">
+              <h2 id="school-title">Schule wählen</h2>
+              <form class="ommp-login-form" name="schulwahl" action="login_module.html" method="get">
+                <label for="kuerzel_schule">Schule</label>
+                <select id="kuerzel_schule" name="kuerzel_schule" tabindex="1">
+                  <option value="KS Ausserschwyz">KS Ausserschwyz</option>
+                  <option value="Gymi Bretten">Gymi Bretten</option>
+                  <option value="KS Menzingen">KS Menzingen</option>
+                  <option value="Uebungsschule">Uebungsschule</option>
+                  <option value="Gym Liestal">Gym Liestal</option>
+                  <option value="KS Uetikon">KS Uetikon</option>
+                  <option value="Gymi Einsiedeln">Gymi Einsiedeln</option>
+                </select>
+                <input type="submit" value="Weiter" tabindex="2">
+              </form>
+
+              <ul class="ommp-points" style="grid-template-columns:1fr; margin-top:16px;">
+                <li>Beraten werden vom Lehrer</li>
+                <li>Fehleranalyse z.B. in Partnerarbeit</li>
+                <li>Routine erlangen und immer mehr Verständnis aufbauen.</li>
+              </ul>
+
+              <div class="ommp-login-actions">
+                <input type="button" id="infobutton1" value="Infos zum Ablauf" onclick="info1()">
+                <input type="button" id="infobutton2" value="Infos für Mathelehrer" onclick="info2()">
+                <a href="../login_notenlisten/passwort.htm" target="noten"><button type="button">Zum Notentool</button></a>
+              </div>
+
+              <div class="ommp-info-output" id="spruch-div">
+                <p id="info">...</p>
+              </div>
+            </div>
+
+            <div class="ommp-login-box ommp-card">
+              <h2>OMMP in Schulen</h2>
+              <div class="ommp-school-logos">
+                <img src="user/logo-KSA.png" alt="KS Ausserschwyz">
+                <img src="user/LogoESG-Unesco2.png" alt="Gymi Einsiedeln">
+                <img src="user/Gym-Listal.png" alt="Gym Liestal">
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="ommp-footer">OMMP.sternenwind.ch &nbsp; Peter Kohl</footer>
+  </div>
+
+  <script>
+    var anz_aufrufe1 = 0;
+    var anz_aufrufe2 = 0;
+
+    function info1() {
+      anz_aufrufe1 = anz_aufrufe1 + 1;
+      if (anz_aufrufe1 % 2 == 1) {
+        document.getElementById("info").innerHTML = "Zum Üben der Mathemodule:<br> Die eigene Schule wählen, oder Übungsschule. Dann einloggen und Module bearbeiten.<br><br>Viel Erfolg beim Üben. ";
+        document.getElementById("infobutton1").value = "Weniger Info";
+      } else {
+        document.getElementById("info").innerHTML = "...";
+        document.getElementById("infobutton1").value = "Infos zum Ablauf";
+      }
+    }
+
+    function info2() {
+      anz_aufrufe2 = anz_aufrufe2 + 1;
+      if (anz_aufrufe2 % 2 == 1) {
+        document.getElementById("info").innerHTML = "Falls auch Interesse an den Prüfungsauswertungen besteht, bitte mit mir Kontakt aufnehmen. Gerne kann ich z.B. auch via Teams eine Einführung in diese Tools für ein Mathekollegium geben. &rarr; Kontakt vgl. Startseite<br>";
+        document.getElementById("infobutton2").value = "Weniger Info";
+      } else {
+        document.getElementById("info").innerHTML = "...";
+        document.getElementById("infobutton2").value = "Infos für Mathelehrer";
+      }
+    }
+  </script>
+</body>
+</html>
