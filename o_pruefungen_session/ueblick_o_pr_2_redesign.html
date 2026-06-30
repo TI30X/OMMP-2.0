@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Peter Kohl">
+<title>OMMP Übungen Überblick SJ 9–12</title>
+<link rel="stylesheet" href="css-ommp/ommp-redesign.css">
+<style>
+  /* Prototyp-Ergänzungen, ohne die geteilte CSS zu verändern */
+  .ommp-video-section[id="HypTest"] .ommp-video-card {
+    border-left-color: #ee9f9f;
+    background: #fff0f0;
+  }
+  .ommp-video-section[id="HypTest"] .ommp-video-card:hover {
+    background: #ffe4e4;
+  }
+  .ommp-tag {
+    margin-left: 6px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--ommp-muted);
+  }
+  .ommp-tag.beta { color: #b06a16; }
+  .ommp-session-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 18px;
+    margin-top: 16px;
+    padding: 12px 16px;
+    border: 1px solid var(--ommp-line);
+    border-radius: 14px;
+    background: #fff;
+    color: var(--ommp-ink);
+    font-size: 0.92rem;
+  }
+  .ommp-session-bar strong { color: var(--ommp-blue-dark); }
+  .ommp-session-bar .spacer { flex: 1 1 auto; }
+</style>
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+</head>
+<body class="ommp-site">
+  <div class="ommp-page">
+    <main class="ommp-shell">
+      <div class="ommp-content" id="TOP">
+
+        <header class="ommp-header">
+          <a class="ommp-brand" href="../index.html" aria-label="OMMP Startseite">
+            <span class="ommp-mark">P</span>
+            <span>
+              <span class="ommp-brand-text">OMM<em>P</em></span>
+              <span class="ommp-brand-sub">Online Mathe Module Prüfungen</span>
+            </span>
+          </a>
+          <nav class="ommp-nav" aria-label="Navigation">
+            <a href="../index.html">Startseite</a>
+            <a href="ueberblick_o_pruefungen_2.html">Prüfungen</a>
+            <a href="../Mathe-Erklaer-Videos/ErklaerVideos.htm">Videos</a>
+            <a href="https://sternenwind.ch/Kontakt/kohl.php" target="kontakt">Kontakt</a>
+          </nav>
+        </header>
+
+        <section class="ommp-hero" aria-labelledby="overview-title">
+          <div>
+            <p class="ommp-kicker">Übungsmodule · Schuljahre 9 bis 12</p>
+            <h1 id="overview-title" class="ommp-title">Überblick OMM<em>P</em>-Übungen</h1>
+            <p class="ommp-lead">Alle Übungsmodule auf einen Blick: nach Themen geordnet, direkt anklickbar. Wähle ein Thema in der Navigation oder springe direkt zu einer Übung.</p>
+
+            <div class="ommp-session-bar">
+              <span>Angemeldet: <strong>Schüler/in</strong> · PNr 0</span>
+              <span class="spacer"></span>
+              <a class="ommp-top-link" href="ueberblick_o_pruefungen_1.php">Zu SJ 5–8 →</a>
+              <a class="ommp-top-link" href="sessionhandler.php?logout_auftrag=ja">Abmelden</a>
+            </div>
+          </div>
+
+          <a class="ommp-action-card" href="01-OMMP-Infos/Willkommen-zu-OMMP-3.mp4" target="self">
+            <strong>Willkommen zu OMM<em>P</em></strong>
+            <span>Erklärvideo: Wie nutzt man diese Module? In wenigen Minuten den Ablauf verstehen.</span>
+          </a>
+        </section>
+
+        <!-- ===== THEMEN-NAVIGATION ===== -->
+        <section class="ommp-section ommp-panel" aria-labelledby="nav-title">
+          <h2 id="nav-title">Links zu den Übungen</h2>
+          <div class="ommp-topic-nav">
+            <div class="ommp-topic-group">
+              <div class="ommp-topic-label">Grundlagen</div>
+              <div class="ommp-topic-links">
+                <a href="#Algebra">Algebra</a>
+                <a href="#Bruch-Zahlen">Bruch-Zahlen</a>
+                <a href="#Prozent">Prozent</a>
+                <a href="#Faktorisieren">Faktorisieren</a>
+                <a href="#Bruch-Terme">Bruch-Terme</a>
+                <a href="#Potenzgesetze">Potenzen</a>
+                <a href="#LinFkt">Lineare Funktion</a>
+                <a href="#WrzlFkt">Wurzel Funktion</a>
+                <a href="#QuadrGL">Quadratische Gleichung</a>
+                <a href="#QuadrFkt">Quadratische Funktion</a>
+                <a href="#LogGL">Logarithmen</a>
+                <a href="#ExpGL">Exp-Gleichungen</a>
+                <a href="#ExpFkt">Exponentialfunktion</a>
+              </div>
+            </div>
+            <div class="ommp-topic-group">
+              <div class="ommp-topic-label">Geometrie</div>
+              <div class="ommp-topic-links">
+                <a href="#Pythagoras">Pythagoras</a>
+                <a href="#Aehnlichkeit">Z-Streckung, Ähnlichkeit</a>
+                <a href="#Strahlensaetze">Strahlensätze</a>
+                <a href="#Trigo1">Trigonometrie</a>
+                <a href="#TrigoFkt">Trigonometrische Funktion</a>
+                <a href="#Stereo">Stereometrie</a>
+              </div>
+            </div>
+            <div class="ommp-topic-group">
+              <div class="ommp-topic-label">Vektorgeometrie</div>
+              <div class="ommp-topic-links">
+                <a href="#Vgeo1">Vgeo 1</a>
+                <a href="#Vgeo_Gerade">Gerade</a>
+                <a href="#Vgeo_Winkel">Winkel</a>
+                <a href="#Vgeo_Ebene">Ebene</a>
+                <a href="#Vgeo_Abstaende">Abstände</a>
+              </div>
+            </div>
+            <div class="ommp-topic-group">
+              <div class="ommp-topic-label">Analysis</div>
+              <div class="ommp-topic-links">
+                <a href="#Analysis1">Ableitungen</a>
+                <a href="#5.12">graphisches Ableiten</a>
+                <a href="#Analysis2">Ableitungsregeln</a>
+                <a href="#Extremwertaufgabe">Extremwertaufgabe</a>
+                <a href="#Analysis-Integrale">Integrale</a>
+              </div>
+            </div>
+            <div class="ommp-topic-group">
+              <div class="ommp-topic-label">Wahrscheinlichkeit</div>
+              <div class="ommp-topic-links">
+                <a href="#Kombinatorik">Kombinatorik</a>
+                <a href="#Wkeit-Baeume-4F">Bäume / 4-Feldertafel</a>
+                <a href="#6.7">Bedingte Wahrscheinlichkeit</a>
+                <a href="#6.9">Erwartungswert</a>
+                <a href="#BeschrStat">Beschreibende Statistik</a>
+                <a href="#BinomialVerteilung">Binomial-Verteilung</a>
+                <a href="#HypTest">Hypothesen-Test</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== ÜBUNGEN ===== -->
+        <div class="ommp-video-layout">
+
+          <!-- Algebra -->
+          <section class="ommp-video-section" id="Algebra">
+            <div class="ommp-video-heading">
+              <h2>Algebra <small>· Voraussetzungen / Prüfungsinhalt</small></h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card">
+                <div class="ommp-video-description">Logical: Logische Folgerungen sind wichtig, um Regeln korrekt anzuwenden.</div>
+                <div class="ommp-video-link"><a href="https://www.sternenwind.ch/spiele/logelei_2.php" target="logical">Logical Cap 🧊</a></div>
+              </div>
+              <div class="ommp-video-card">
+                <div class="ommp-video-description">Logical: Folgerungen beüben. Einstein behauptete im letzten Jahrhundert, dass nur 2 % der Weltbevölkerung dieses Logical lösen können.</div>
+                <div class="ommp-video-link"><a href="https://www.sternenwind.ch/spiele/logelei_3.php" target="logical">Logical Fisch 🐟</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.0">
+                <div class="ommp-video-description">Primfaktorzerlegung, schriftliche Multiplikation, kgV und ggT bestimmen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=kgV_ggT_1&anker=1.0">kgV_ggT_1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.1">
+                <div class="ommp-video-description">Primfaktorzerlegung mit etwas grösseren Zahlen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=kgV_ggT_2&anker=1.1">kgV_ggT_2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.11">
+                <div class="ommp-video-description">Primfaktorzerlegung mit drei Zahlen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=kgV_ggT_3&anker=1.11">kgV_ggT_3</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.3">
+                <div class="ommp-video-description">Fachwörter verstehen: addieren, subtrahieren, multiplizieren.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=rueckrechnen_1&anker=1.10.3">Rückrechnen 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.4">
+                <div class="ommp-video-description">Fachwörter verstehen: Summe, Differenz, Produkt, Quotient.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=rueckrechnen_2&anker=1.10.4">Rückrechnen 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.5">
+                <div class="ommp-video-description">Terme mit Variablen vereinfachen. <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=Var_PuStri_3&anker=1.10.5">Var_PuStri_3</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.12">
+                <div class="ommp-video-description">Terme mit Variablen und Klammern zusammenfassen. <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=Var_Klammern_3&anker=1.10.12">Var Klammern 3</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.13">
+                <div class="ommp-video-description">Terme mit Buchstaben, Längen berechnen und zusammenfassen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=Umfang2&anker=1.10.13">Umfang 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.14">
+                <div class="ommp-video-description">Terme mit Buchstaben, Flächen erstellen und zusammenfassen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=Flaeche2&anker=1.10.14">Flaeche 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.2">
+                <div class="ommp-video-description">Reihenfolge der Rechenoperationen: ( ) vor ^ vor · vor − ; Distributivgesetz, Vorzeichen, Auswerten eines Termes T(x) für verschiedene x-Werte.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=algebra_1&anker=1.2">Algebra_1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.2.1">
+                <div class="ommp-video-description">Distributivgesetz und Binome anwenden.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=binom&anker=1.2.1">Binom</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Bruch-Zahlen -->
+          <section class="ommp-video-section" id="Bruch-Zahlen">
+            <div class="ommp-video-heading">
+              <h2>Bruch-Zahlen <small>· Voraussetzungen / Prüfungsinhalt</small></h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="1.1.1">
+                <div class="ommp-video-description">Teilbarkeitsregeln.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=teilbarkeit&anker=1.1.1">Teilbarkeit</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.20">
+                <div class="ommp-video-description">Zahlenbruch als Anteil erkennen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=anteile_1&anker=1.10.20">Anteile 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.1">
+                <div class="ommp-video-description"><strong>Zahlenbrüche:</strong> Abstand und Mitte berechnen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=abstand_brueche&anker=1.10.1">Abstand Brüche</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.11">
+                <div class="ommp-video-description">Zahlenbrüche und Dezimalzahlen addieren.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=Bruch_Dez_Zahlen_2&anker=1.10.11">Bruch Dez.Zahlen 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.7">
+                <div class="ommp-video-description">Zahlenbrüche zusammenfassen, Punkt vor Strich.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=Bruch_PuStri_2&anker=1.10.7">Bruch_PuStri_2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.8">
+                <div class="ommp-video-description">Zahlenbrüche mit Klammern vereinfachen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=Bruch_Klammern_2&anker=1.10.8">Bruch_Klammern_2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.4.1">
+                <div class="ommp-video-description">Zahlenbrüche zusammenfassen: Primfaktorenzerlegung, Erweitern, Kürzen, Hauptnenner kgV, Doppelbruch. <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=bruch_zahlen_3&anker=1.4.1">Bruch Zahlen 3</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.4">
+                <div class="ommp-video-description">Zahlenbrüche zusammenfassen: Primfaktorenzerlegung, Erweitern, Kürzen, Hauptnenner kgV, Doppelbruch.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=bruch_zahlen_4&anker=1.4">Bruch Zahlen 4</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Prozent -->
+          <section class="ommp-video-section" id="Prozent">
+            <div class="ommp-video-heading">
+              <h2>Prozentrechnen <small>· Voraussetzungen / Prüfungsinhalt</small></h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="1.10.26">
+                <div class="ommp-video-description">Prozentzahl, Dezimalzahl, Bruch. Schriftliche Division. Kürzen. <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color6&templatefile=prozent_0a&anker=1.10.26">Prozent 0a</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.27">
+                <div class="ommp-video-description">Schuhkauf mit Startwert · Faktor = Endwert. Schriftliche Division. <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color6&templatefile=prozent_0b&anker=1.10.27">Prozent 0b</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.25">
+                <div class="ommp-video-description">Prozentsatz im Faktor erkennen. Startwert · Faktor = Endwert. <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=prozent_1&anker=1.10.25">Prozent 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.23">
+                <div class="ommp-video-description">Prozentzahl \( p\,\% = \frac{p}{100} \) als Zahlenbruch erkennen. <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=prozent_2&anker=1.10.23">Prozent 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.24">
+                <div class="ommp-video-description">Prozentzahl, Zuwachs und Abnahme. <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=prozent_3&anker=1.10.24">Prozent 3</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Faktorisieren -->
+          <section class="ommp-video-section" id="Faktorisieren">
+            <div class="ommp-video-heading">
+              <h2>Faktorisieren <small>· Voraussetzungen / Prüfungsinhalt</small></h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="1.3.1">
+                <div class="ommp-video-description">Faktorisieren nach Vieta.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=faktorisieren_vieta&anker=1.3.1">Faktorisieren Vieta</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.3">
+                <div class="ommp-video-description">Terme mit gleichartigen Buchstaben zusammenfassen, Faktorisieren nach Vieta, Gleichung mit Produkt = 0 lösen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=faktorisieren_1&anker=1.3">Faktorisieren 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.21">
+                <div class="ommp-video-description">Faktorisieren mit Binomen. <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=faktorisieren_2&anker=1.10.21">Faktorisieren 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.22">
+                <div class="ommp-video-description">Faktorisieren mit Teilsummen. <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=faktorisieren_3&anker=1.10.22">Faktorisieren 3</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10">
+                <div class="ommp-video-description">Faktorisieren mit Polynomdivision. Gleichung dritten Grades lösen durch Herausteilen einer bekannten Lösung.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=polynomdivision1&anker=1.10">Polynomdivision 1</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Bruch-Terme -->
+          <section class="ommp-video-section" id="Bruch-Terme">
+            <div class="ommp-video-heading">
+              <h2>Bruch-Terme <small>· Voraussetzungen / Prüfungsinhalt</small></h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="1.12.2">
+                <div class="ommp-video-description">ggT bestimmen mit Variablen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=ggT_Var_2&anker=1.12.2">ggT Var 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.12.1">
+                <div class="ommp-video-description">kgV bestimmen mit Variablen, Hauptnenner beüben.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=kgV_Var_2&anker=1.12.1">kgV Var 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.12.3">
+                <div class="ommp-video-description">kgV von 3 Termen mit Variablen bestimmen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=kgV_Var_3&anker=1.12.3">kgV Var 3</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.10.2">
+                <div class="ommp-video-description"><strong>Brüche mit Variablen</strong> vereinfachen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=Bruch_Var_PuStri_4&anker=1.10.2">Bruch Var PuStri 4</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.5">
+                <div class="ommp-video-description">Brüche mit Variablen. Bruchgleichung lösen, Faktorisieren nach Vieta, Definitionsbereich.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=bruch_gl_1&anker=1.5">Bruch_Gl_1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.6">
+                <div class="ommp-video-description">Brüche mit Variablen. Bruchgleichung lösen, Definitionsbereich.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=bruch_gl_2&anker=1.6">Bruch_Gl_2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.6.1">
+                <div class="ommp-video-description">Brüche mit Variablen. Bruchgleichung lösen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=bruch_gl_3&anker=1.6.1">Bruch_Gl_3</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.7.1">
+                <div class="ommp-video-description">Brüche mit Variablen zusammenfassen, Operationenreihenfolge \( +\,-\,\cdot\,: \) beachten, Hauptnenner kgV.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=bruch_1a&anker=1.7.1">Bruch 1a</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.7.2">
+                <div class="ommp-video-description">Brüche mit Variablen zusammenfassen, Operationenreihenfolge und Klammern beachten, Hauptnenner kgV.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=bruch_1b&anker=1.7.2">Bruch 1b</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.7.3">
+                <div class="ommp-video-description">Doppelbrüche mit Variablen zusammenfassen, Hauptnenner kgV.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=bruch_1c&anker=1.7.3">Bruch 1c</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.7">
+                <div class="ommp-video-description">Drei Brüche mit Variablen zusammenfassen, Hauptnenner kgV.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=bruch_2&anker=1.7">Bruch 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.8">
+                <div class="ommp-video-description">Drei Brüche mit Variablen zusammenfassen, Binome, Hauptnenner kgV.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=bruch_3&anker=1.8">Bruch 3</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.7.4">
+                <div class="ommp-video-description">Doppelbrüche mit Variablen zusammenfassen, Hauptnenner kgV.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=bruch_4a&anker=1.7.4">Bruch 4a</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Potenzgesetze -->
+          <section class="ommp-video-section" id="Potenzgesetze">
+            <div class="ommp-video-heading">
+              <h2>Potenzgesetze <small>· Voraussetzungen / Prüfungsinhalt</small></h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="1.9.7">
+                <div class="ommp-video-description">Potenzen, Hoch vor Punkt vor Strich mit ganzen Zahlen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=potenzen_N0&anker=1.9.7">Potenzen N0</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.9.4">
+                <div class="ommp-video-description">Potenzgesetze natürliche Exponenten, Faktorisieren, Kürzen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=potenzen_N1&anker=1.9.4">Potenzen N1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.9.2">
+                <div class="ommp-video-description">Potenzgesetze mit negativen Exponenten, Faktorisieren, einfache Division.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=potenzen_Z1&anker=1.9.2">Potenzen Z1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.9.8">
+                <div class="ommp-video-description">Potenzgesetze mit negativen Exponenten, Faktorisieren, Brüche kürzen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=potenzen_Z2&anker=1.9.8">Potenzen Z2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.9">
+                <div class="ommp-video-description">Potenzgesetze mit negativen Exponenten, Faktorisieren, Kürzen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=potenzen_1&anker=1.9">Potenzen 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.9.1">
+                <div class="ommp-video-description">Potenzen und Wurzeln in einer Gleichung anwenden können.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=wurzel_1&anker=1.9.1">Wurzel 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.9.3">
+                <div class="ommp-video-description">Potenzgesetze Bruch-Exponenten, Faktorisieren, Kürzen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=potenzen_Q&anker=1.9.3">Potenzen Q+</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.9.5">
+                <div class="ommp-video-description">Potenzgesetze Bruch-Exponenten, Faktorisieren, Kürzen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=potenzen_Q-&anker=1.9.5">Potenzen Q−</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.9.6">
+                <div class="ommp-video-description">Potenzgesetze: Wurzeln und Potenzen zusammenfassen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=pot_wurz&anker=1.9.6">Pot_Wurz</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Pythagoras -->
+          <section class="ommp-video-section" id="Pythagoras">
+            <div class="ommp-video-heading">
+              <h2>Pythagoras <small>· Voraussetzungen / Prüfungsinhalt</small></h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="1.11.2">
+                <div class="ommp-video-description">Satzgruppe vom Pythagoras anwenden können. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=pytDreieck&anker=1.11.2">Pyth. Dreieck</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.11.1">
+                <div class="ommp-video-description">Satzgruppe vom Pythagoras anwenden können. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=Drache&anker=1.11.1">Drache</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Ähnlichkeit -->
+          <section class="ommp-video-section" id="Aehnlichkeit">
+            <div class="ommp-video-heading">
+              <h2>Zentrische Streckung, Ähnlichkeit</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="1.12">
+                <div class="ommp-video-description">Zentrische Streckung: Streckfaktor, Längen, Flächen berechnen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=z-Streck-1&anker=1.12">z-Streck-1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.13">
+                <div class="ommp-video-description">Zentrische Streckung: Bestimmen des Zentrums Z bei verschiedenen Streckfaktoren. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=z-Streckung&anker=1.13">z-Streckung</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.14">
+                <div class="ommp-video-description">Ähnlichkeit: Wann sind zwei Dreiecke ähnlich zueinander? <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=aehnlich_1&anker=1.14">Ähnlich 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.14.1">
+                <div class="ommp-video-description">Ähnlichkeit: Quadrat im Dreieck einbeschrieben. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=aehnlich_2&anker=1.14.1">Ähnlich 2</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Strahlensätze -->
+          <section class="ommp-video-section" id="Strahlensaetze">
+            <div class="ommp-video-heading">
+              <h2>Strahlensätze</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="1.15">
+                <div class="ommp-video-description">Strahlensätze anwenden können. V-Figur und X-Figur. Schriftliche Division. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=strSaetze&anker=1.15">Strahlensätze</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Trigonometrie -->
+          <section class="ommp-video-section" id="Trigo1">
+            <div class="ommp-video-heading">
+              <h2>Trigonometrie</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="1.16">
+                <div class="ommp-video-description">Trigonometrie: Sinus, Cosinus, Tangens im 90°-Dreieck anwenden. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=sin_cos_tan&anker=1.16">sin_cos_tan</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.17">
+                <div class="ommp-video-description">Trigonometrie: Längen und Winkel im 90°-Dreieck berechnen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=sin_cos_dreieck&anker=1.17">sin_cos_Dreieck</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.30">
+                <div class="ommp-video-description">Trigonometrie: Einheitskreis, Winkel, \( cos(\beta) = sin(\alpha) \).</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=einheitskreis1&anker=1.30">Einheitskreis 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.30b">
+                <div class="ommp-video-description">Trigonometrie: Einheitskreis, Winkel, Bogenmass, \( cos(a) = sin(b) \).</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=einheitskreis1b&anker=1.30">Einheitskreis 1b</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.31">
+                <div class="ommp-video-description">Trigonometrie: Einheitskreis, Winkel, Bogenmass, \( sin(\alpha) = -sin(\beta) \).</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=einheitskreis2&anker=1.31">Einheitskreis 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.32">
+                <div class="ommp-video-description">Trigonometrie: Einheitskreis, Winkel, Bogenmass, \( tan(\gamma) = sin(\delta) \). <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=einheitskreis3&anker=1.32">Einheitskreis 3</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.18">
+                <div class="ommp-video-description">Trigonometrie: Sinus, Cosinus, Tangens im Trapez anwenden. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=trapez&anker=1.18">Trapez</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.19">
+                <div class="ommp-video-description">Trigonometrie: Sinus, Cosinus, Tangens im Quader. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=sin_cos_quader&anker=1.19">sin_cos_Quader</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.20">
+                <div class="ommp-video-description">Trigonometrie: Sinus, Cosinus, Tangens im Würfel. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=sin_cos_wuerfel&anker=1.20">sin_cos_Wuerfel</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.22">
+                <div class="ommp-video-description">Trigonometrie: Sinussatz, Cosinussatz im allgemeinen Dreieck. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=dreieck_2&anker=1.22">Dreieck 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.22.1">
+                <div class="ommp-video-description">Trigonometrie: Sinussatz, Cosinussatz im allgemeinen Dreieck bei SSW. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=dreieck_ssw&anker=1.22.1">Dreieck SSW</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.21">
+                <div class="ommp-video-description">Peripheriewinkelsatz in einem „Ziffernblatt“ anwenden. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=pw-satz&anker=1.21">Pw-Satz</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Trigo Funktion -->
+          <section class="ommp-video-section" id="TrigoFkt">
+            <div class="ommp-video-heading">
+              <h2>Trigonometrische Funktion</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="3.13">
+                <div class="ommp-video-description">Trigo-Funktionen verschieben: Amplitude, Periode, Frequenz, Definitionsbereich, Wertebereich bestimmen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=TrigoFkt1&anker=3.13">Trigo-Funktion 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="3.14">
+                <div class="ommp-video-description">Trigo-Funktionen bestimmen: \( f(x) = a \cdot sin(\,b \cdot (x + c)\,) + d \). Vom Schaubild zur Funktionsgleichung.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=TrigoFkt2&anker=3.14">Trigo-Funktion 2</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Stereometrie -->
+          <section class="ommp-video-section" id="Stereo">
+            <div class="ommp-video-heading">
+              <h2>Stereometrie</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="1.28">
+                <div class="ommp-video-description">Stereometrie: Zylindervolumen berechnen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=stereo_zylinder1&anker=1.28">Stereo_Zylinder1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.27">
+                <div class="ommp-video-description">Stereometrie: Pyramidenvolumen berechnen, Höhen erkennen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=stereo_vol_pyr&anker=1.27">Stereo Vol_Pyr</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.25">
+                <div class="ommp-video-description">Stereometrie: Pyramidenstumpf-Volumen berechnen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=stereo_pyramide1&anker=1.25">Stereo_Pyra 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.26">
+                <div class="ommp-video-description">Stereometrie: Aus Mantelfläche das Kegelvolumen berechnen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=stereo_kegel1&anker=1.26">Stereo_Kegel 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.23">
+                <div class="ommp-video-description">Stereometrie: Kegelstumpf-Volumen berechnen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=stereo_kegel2&anker=1.23">Stereo_Kegel 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="1.24">
+                <div class="ommp-video-description">Stereometrie: Kegelstumpf-Oberfläche berechnen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=stereo_kegel3&anker=1.24">Stereo_Kegel 3</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Lineare Funktion -->
+          <section class="ommp-video-section" id="LinFkt">
+            <div class="ommp-video-heading">
+              <h2>Lineare Funktion</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="2.0.6">
+                <div class="ommp-video-description">Lineare Funktion, Wertetabelle: Gib drei Punkte an, die auf f(x) liegen. <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=linFkt_Wertetabelle&anker=2.0.6">linFkt Wertetabelle</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.0.1">
+                <div class="ommp-video-description">Lineare Funktion, Punktprobe \( g(x) = m \cdot x + q \). <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=linFkt_Punktprobe_1&anker=2.0.1">linFkt Punktprobe 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.0.2">
+                <div class="ommp-video-description">Lineare Funktion. Ist P(x/y) oberhalb oder unterhalb von g(x)? <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=linFkt_Punktprobe_2&anker=2.0.2">linFkt Punktprobe 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.0.3">
+                <div class="ommp-video-description">Lineare Funktionsgleichung anhand vom Schaubild aufstellen: \( g(x) = m \cdot x + q \) mit \( m = \frac{\Delta y}{\Delta x} \). <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=linFkt_Graph&anker=2.0.3">linFkt Graph</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.0.5">
+                <div class="ommp-video-description">Lineare Funktion: Nullstelle \( N(x/0) \), y-Achsenabschnitt \( Q(0/y) \). <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=linFkt_Nst_Q&anker=2.0.5">linFkt Nst und Q</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.0.4">
+                <div class="ommp-video-description">Lineare Funktionsgleichung aufstellen. Senkrechte Steigung \( m_2 = \frac{-1}{m_1} \).</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=linFkt_Punktprobe_3&anker=2.0.4">linFkt Punktprobe 3</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.1.1">
+                <div class="ommp-video-description">Lineare Funktion, Nullstelle, y-Achsenabschnitt: \( v(x) = m \cdot x + q \).</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=linFkt_verschieben1&anker=2.1.1">linFkt verschieben 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.1.2">
+                <div class="ommp-video-description">Lineare Funktion, Nullstelle, y-Achsenabschnitt.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=linFkt_verschieben2&anker=2.1.2">linFkt verschieben 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.2">
+                <div class="ommp-video-description">Lineare Funktion, Bruchrechnung, Schnitt zweier Geraden \( g(x) \cap h(x) \).</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=linFkt_schnitt_2&anker=2.2">linFkt Schnitt 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.4.1">
+                <div class="ommp-video-description">Lineare Funktion, Steigungswinkel \( \gamma \) berechnen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=linFkt_Winkel_1&anker=2.4.1">linFkt Winkel 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.3">
+                <div class="ommp-video-description">Lineare Funktion, Nullstellen, Schnittpunkte, senkrechte Steigungen, Gerade aufstellen, Dreiecksfläche berechnen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=linFkt2&anker=2.3">linFkt 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.4">
+                <div class="ommp-video-description">Lineare Funktion, senkrechte Steigungen, Seitenhalbierende und Höhe im Dreieck berechnen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=linFkt3&anker=2.4">linFkt 3</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.5.0">
+                <div class="ommp-video-description">Logical: Mit mehreren linearen Gleichungen und einer quadratischen Gleichung ein Logical lösen.</div>
+                <div class="ommp-video-link"><a href="https://www.sternenwind.ch/spiele/logelei_4.php" target="logical">Logical Bizeps 💪</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.5">
+                <div class="ommp-video-description">Lineares Gleichungssystem 2 × 2 lösen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=lgs_2x2&anker=2.5">LGS 2x2</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.6">
+                <div class="ommp-video-description">Lineares Gleichungssystem 3 × 2 lösen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=lgs_3x2&anker=2.6">LGS 3x2</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.7">
+                <div class="ommp-video-description">Zeitaufgaben in Gleichungen umsetzen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=text-zeit&anker=2.7">Text Zeit</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.8">
+                <div class="ommp-video-description">Textaufgaben über fixe und variable Kosten. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=text-kosten&anker=2.8">Text Kosten</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.10">
+                <div class="ommp-video-description">Bewegungsaufgaben in Gleichungen umsetzen. \( v = \frac{s}{t} \). <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=text-bewegung&anker=2.10">Text Bewegung</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.11">
+                <div class="ommp-video-description">Leistungsaufgaben in Gleichungen umsetzen. \( P = \frac{W}{t} \). <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=text-leistung&anker=2.11">Text Leistung</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.9">
+                <div class="ommp-video-description">Textaufgaben über Mischungen. Mischungsgleichung nutzen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color1&templatefile=Mischungen&anker=2.9">Text Mischungen</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Wurzel Funktion -->
+          <section class="ommp-video-section" id="WrzlFkt">
+            <div class="ommp-video-heading">
+              <h2>Wurzel Funktion</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="2.21">
+                <div class="ommp-video-description">Wurzelgleichung lösen, Faktorisieren, Satz vom Nullprodukt. <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=wurzel_GL&anker=2.21">Wurzel GL</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.24">
+                <div class="ommp-video-description">Wurzelfunktionsgleichung aufstellen. \( f(x) = a \cdot \sqrt{b \cdot (x + c)} + d \).</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=WFkt-aufstellen&anker=2.24">WFkt aufstellen</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.23">
+                <div class="ommp-video-description">Wurzelfunktion spiegeln, Definitionsbereich, Wertebereich bestimmen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=WrzlFkt&anker=2.23">WurzelFkt</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.22">
+                <div class="ommp-video-description">Wurzelfunktion, Lineare Funktion, Wurzelgleichung lösen, Faktorisieren, Satz vom Nullprodukt. <span class="ommp-tag">TR</span> <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=schnitt_g_w&anker=2.22">Schnitt W − g</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Quadratische Gleichung -->
+          <section class="ommp-video-section" id="QuadrGL">
+            <div class="ommp-video-heading">
+              <h2>Quadratische Gleichung</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="2.12">
+                <div class="ommp-video-description">Quadratische Ergänzung zu einer quadratischen Gleichung bestimmen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=q_Erg&anker=2.12">q Ergänzung</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.13">
+                <div class="ommp-video-description">Quadratische Gleichungen lösen \( a \cdot x^2 + b \cdot x + c = 0 \). <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=qGL&anker=2.13">q GL</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.14">
+                <div class="ommp-video-description">Quadratische Gleichungen mit Fallunterscheidung lösen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=qGL-Faelle&anker=2.14">qGL-Fälle</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.15">
+                <div class="ommp-video-description">Bi-quadratische Gleichungen mit Substitution lösen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=biquadGL&anker=2.15">biquadGL</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Quadratische Funktion -->
+          <section class="ommp-video-section" id="QuadrFkt">
+            <div class="ommp-video-heading">
+              <h2>Quadratische Funktion</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="2.16.1">
+                <div class="ommp-video-description">Quadratische Funktion: Nullstellen und y-Achsenschnittpunkt Q berechnen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=qFkt_N_Q&anker=2.16.1">qFkt_N_Q</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.16">
+                <div class="ommp-video-description">Quadratische Funktion, Lineare Funktion, „Mitternachtsformel“. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=schnitt_g_p&anker=2.16">Schnitt P − g</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.17">
+                <div class="ommp-video-description">Quadratische Funktion, Scheitelpunktform, Verschiebungen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=p_verschieben&anker=2.17">Parabel verschieben</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.18">
+                <div class="ommp-video-description">Quadratische Funktion mit Scharparameter, Scheitelpunkt einer Parabel berechnen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=p_scheitel&anker=2.18">Parabel-Scheitel</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.19">
+                <div class="ommp-video-description">Quadratische Funktion aufstellen mit linearem Gleichungssystem 3 × 3.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=p_aufstellen&anker=2.19">q-Fkt Gleichung</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.20">
+                <div class="ommp-video-description">Quadratische Funktion aufstellen mit verschiedenen Angaben. Hauptform, Scheitelpunktsform und faktorisierte Form nutzen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=qFkt-Bruecke&anker=2.20">q-Fkt Brücke</a></div>
+              </div>
+              <div class="ommp-video-card" id="2.21.1">
+                <div class="ommp-video-description">Quadratische Funktion, Lineare Funktion, eine Rechtecksfläche maximieren, Scheitelpunkt einer Parabel bestimmen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=linFkt-Extrw&anker=2.21.1">Extremwert</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Logarithmus -->
+          <section class="ommp-video-section" id="LogGL">
+            <div class="ommp-video-heading">
+              <h2>Logarithmus-Gleichungen</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="3.1">
+                <div class="ommp-video-description">Logarithmendefinition anwenden.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2b&templatefile=log_Def&anker=3.1">Log Def</a></div>
+              </div>
+              <div class="ommp-video-card" id="3.3">
+                <div class="ommp-video-description">Log- und Potenzgesetze anwenden.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2b&templatefile=log_1&anker=3.3">Log 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="3.4">
+                <div class="ommp-video-description">Log- und Potenzgesetze anwenden. Basiswechselsatz.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2b&templatefile=log_2&anker=3.4">Log 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="3.5">
+                <div class="ommp-video-description">Log- und Potenzgesetze anwenden. Log-Gleichung lösen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2b&templatefile=log_3&anker=3.5">Log 3</a></div>
+              </div>
+              <div class="ommp-video-card" id="3.2">
+                <div class="ommp-video-description">Logarithmen-Gesetze erkennen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2b&templatefile=log_gesetze&anker=3.2">Log Gesetze</a></div>
+              </div>
+              <div class="ommp-video-card" id="3.6">
+                <div class="ommp-video-description">Log- und Potenzgesetze, 10er-Logarithmusgleichung lösen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2b&templatefile=log_gl1&anker=3.6">Log GL 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="3.7">
+                <div class="ommp-video-description">Log- und Potenzgesetze, 2er- und 3er-Logarithmusgleichung lösen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2b&templatefile=log_gl2&anker=3.7">Log GL 2</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Exponential-Gleichungen -->
+          <section class="ommp-video-section" id="ExpGL">
+            <div class="ommp-video-heading">
+              <h2>Exponential-Gleichungen</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="3.8">
+                <div class="ommp-video-description">Exponentialgleichung, einfach. Log- und Potenzgesetze. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=exp_gl_0&anker=3.8">Exp_Gl_0</a></div>
+              </div>
+              <div class="ommp-video-card" id="3.9">
+                <div class="ommp-video-description">Exponentialgleichung, Log- und Potenzgesetze. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=exp_gl_1&anker=3.9">Exp_Gl_1</a></div>
+              </div>
+              <div class="ommp-video-card" id="3.10">
+                <div class="ommp-video-description">Exponentialgleichung, Log- und Potenzgesetze. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2&templatefile=exp_gl_2&anker=3.10">Exp_Gl_2</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Exponential-Funktion -->
+          <section class="ommp-video-section" id="ExpFkt">
+            <div class="ommp-video-heading">
+              <h2>Exponential-Funktion</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="3.11">
+                <div class="ommp-video-description">Exponentialfunktion, Potenzgesetze, Wachstumsfunktion aufstellen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2b&templatefile=exp_fkt_1&anker=3.11">Exp_Fkt</a></div>
+              </div>
+              <div class="ommp-video-card" id="3.12">
+                <div class="ommp-video-description">Exponentialfunktion, prozentuales Wachstum berechnen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2b&templatefile=exp_fkt_proz&anker=3.12">Exp_Fkt proz</a></div>
+              </div>
+              <div class="ommp-video-card" id="3.15">
+                <div class="ommp-video-description">Exponentialfunktion, Nullstellen berechnen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color2b&templatefile=exp_fkt_Nst&anker=3.15">Exp_Fkt Nst</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Vektorgeometrie -->
+          <section class="ommp-video-section" id="Vgeo1">
+            <div class="ommp-video-heading">
+              <h2>Vektorgeometrie</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card">
+                <div class="ommp-video-description">Vgeo: Beispiellösungen zu einigen Modulen.</div>
+                <div class="ommp-video-link"><a href="OPr_Beispielloesungen/Vgeo-OPr-Beispielloesungen.pdf" target="self">Vgeo-Bsp-Lösungen.pdf</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.2">
+                <div class="ommp-video-description">Vgeo: Ortsvektoren, linear abhängige Richtungsvektoren.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=vgeo_lin_abhaengig&anker=4.2">Vgeo_lin_abhaengig</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.3">
+                <div class="ommp-video-description">Vgeo: Linearkombination aus zwei Richtungsvektoren berechnen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=vgeo_lin_Kombi&anker=4.3">Vgeo_lin_Kombi</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.4">
+                <div class="ommp-video-description">Vgeo: Ortsvektoren, Richtungsvektoren, Dreiecksfläche, Betrag eines Vektors, „Mitternachtsformel“, Länge eines Vektors berechnen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=vgeo_v_betrag&anker=4.4">Vgeo_v_Betrag</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Vgeo Geraden -->
+          <section class="ommp-video-section" id="Vgeo_Gerade">
+            <div class="ommp-video-heading">
+              <h2>V-Geo: Geraden im Raum</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="4.5">
+                <div class="ommp-video-description">Vgeo: Spurpunkte von Geraden im Raum \( \left(\begin{array}{c} x \\ y \\ z \end{array}\right) = \left(\begin{array}{c} 1 \\ 2 \\ 3 \end{array}\right) + t \cdot \left(\begin{array}{c} 4 \\ 5 \\ 6 \end{array}\right) \).</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=vgeo_spurpkte&anker=4.5">Vgeo_Spurpunkte</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.21">
+                <div class="ommp-video-description">Vgeo: Schnitt zweier Geraden im Raum. Lösen des Gleichungssystems.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=vgeo_schnitt_gerade_g_h&anker=4.21">Vgeo_Schnitt Gerade g_h</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.6">
+                <div class="ommp-video-description">Vgeo: Geraden durch Seitenmittelpunkt, Mittelpunkt zwischen zwei Punkten.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=vgeo_geraden1&anker=4.6">Vgeo_Geraden1</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.7">
+                <div class="ommp-video-description">Vgeo: Höhe und Mittelsenkrechte im Dreieck erstellen. Mittelpunkt zwischen zwei Punkten, senkrechter Richtungsvektor.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=vgeo_geraden2&anker=4.7">Vgeo_Geraden2</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.8">
+                <div class="ommp-video-description">Vgeo: Gerade durch Schwerpunkt aufstellen. Mittelpunkt zwischen zwei Punkten, senkrechter Vektor.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=vgeo_geraden3&anker=4.8">Vgeo_Geraden3</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.9">
+                <div class="ommp-video-description">Vgeo: Gegenseitige Lage von Geraden im Raum beurteilen: identisch, parallel, geschnitten, windschief.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=vgeo_geradenlage&anker=4.9">Vgeo_Geradenlage</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Vgeo Winkel -->
+          <section class="ommp-video-section" id="Vgeo_Winkel">
+            <div class="ommp-video-heading">
+              <h2>V-Geo: Winkel, Skalarprodukt</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="4.10">
+                <div class="ommp-video-description">Vgeo: Raumvorstellung, sin( ), cos( ), Kraftvektor in Komponenten zerlegen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3b&templatefile=vgeo_kraftvektor&anker=4.10">Vgeo_Kraftvektor</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.11">
+                <div class="ommp-video-description">Vgeo: Orts- und Richtungsvektoren, Skalarprodukt anwenden. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3b&templatefile=vgeo_winkel_1&anker=4.11">Vgeo_Winkel_1</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.12">
+                <div class="ommp-video-description">Vgeo: Mit Skalarprodukt Winkel zwischen zwei Richtungsvektoren berechnen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3b&templatefile=vgeo_winkel_2&anker=4.12">Vgeo_Winkel_2</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.13">
+                <div class="ommp-video-description">Vgeo: Skalarprodukt nutzen für 90°-Winkel zwischen zwei Richtungsvektoren. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3b&templatefile=vgeo_90Grad&anker=4.13">Vgeo_90°</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Vgeo Ebene -->
+          <section class="ommp-video-section" id="Vgeo_Ebene">
+            <div class="ommp-video-heading">
+              <h2>V-Geo: Ebene im Raum</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="4.14">
+                <div class="ommp-video-description">Vgeo: Mit Skalarprodukt Winkel zwischen Richtungsvektor und Koordinaten-Ebene berechnen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3b&templatefile=vgeo_winkel_E&anker=4.14">Vgeo_Winkel_E</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.24">
+                <div class="ommp-video-description">Vgeo: Senkrechte Geraden aufstellen. Vektorprodukt und Skalarprodukt nutzen. <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3b&templatefile=vgeo_g_senkrecht&anker=4.24">Vgeo g senkrecht</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.25">
+                <div class="ommp-video-description">Vgeo: Das Vektorprodukt nutzen, um Flächen auszurechnen. <span class="ommp-tag beta">β</span> <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3b&templatefile=vgeo_flaeche&anker=4.25">Vgeo Fläche</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.15">
+                <div class="ommp-video-description">Vgeo: Vektorprodukt, Koordinatengleichung einer Ebene erstellen \( ax + by + cz + d = 0 \).</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3b&templatefile=vgeo_ebene_koform&anker=4.15">Ebene in Ko.form</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.18">
+                <div class="ommp-video-description">Vgeo: Schnitt von Gerade in Parameterform mit Ebene in Koordinatenform.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3b&templatefile=vgeo_g_E&anker=4.18">Schnitt g − Ebene</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.22">
+                <div class="ommp-video-description">Vgeo: Vorstellung üben! Geraden im Raum bestimmen durch verschiedene Infos. <span class="ommp-tag beta">β</span> <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3b&templatefile=vgeo_geraden4&anker=4.22">Vgeo_Geraden4</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.23">
+                <div class="ommp-video-description">Vgeo: Spiegle den Punkt P an der Ebene E.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3b&templatefile=vgeo_spiegel_pkt&anker=4.23">Spiegelpunkt</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.19">
+                <div class="ommp-video-description">Vgeo: Schnittgerade zweier Ebenen in Koordinatenform berechnen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3b&templatefile=vgeo_schnitt_E_E&anker=4.19">Schnitt E₁ ∩ E₂</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Vgeo Abstände -->
+          <section class="ommp-video-section" id="Vgeo_Abstaende">
+            <div class="ommp-video-heading">
+              <h2>Vektorgeometrie: Abstände</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="4.16">
+                <div class="ommp-video-description">Vgeo: Abstand Punkt zu Geraden im Raum. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3b&templatefile=vgeo_abstand_P_g&anker=4.16">Abstand Punkt − g</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.17">
+                <div class="ommp-video-description">Vgeo: Lotfusspunkt von Punkt zu Geraden im Raum. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3b&templatefile=vgeo_Lotfusspunkt_P_g&anker=4.17">Lotfusspunkt P − g</a></div>
+              </div>
+              <div class="ommp-video-card" id="4.20">
+                <div class="ommp-video-description">Vgeo: Abstand von (windschiefen) Geraden im Raum, z. B. HNF nutzen: \( \frac{ax + by + cz + d}{|\vec{n}|} = 0 \). <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3b&templatefile=vgeo_abstand_g-h&anker=4.20">Abstand g − h</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Analysis Ableitungen -->
+          <section class="ommp-video-section" id="Analysis1">
+            <div class="ommp-video-heading">
+              <h2>Analysis: Ableitungen</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="5.1">
+                <div class="ommp-video-description">Ableitung graphisch schätzen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=abl_schaetzen&anker=5.1">Abl. Schätzen</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.2">
+                <div class="ommp-video-description">Ableitung, Potenzregel \( f(x) = a \cdot x^{n} \longrightarrow f'(x) = a \cdot n \cdot x^{n-1} \).</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=abl_xyz&anker=5.2">Abl xyz</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.3">
+                <div class="ommp-video-description">Ableitungsregel für Potenzen, Summenregel. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=abl_pot&anker=5.3">Abl. Potenzen</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.4">
+                <div class="ommp-video-description">Ableitung, Potenzregel, Tangente an eine quadr. Fkt im Punkt P(x/y).</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=tangenten_qfkt&anker=5.4">Tangente an qFkt</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.5">
+                <div class="ommp-video-description">Ableitung, Potenzregel, Normale an eine Funktion berechnen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=normale_qfkt&anker=5.5">Normale an qFkt</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.7">
+                <div class="ommp-video-description">Ableitung, Extremwerte, Fläche Dreieck.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=abl_extrem1&anker=5.7">Abl Extrem 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.8">
+                <div class="ommp-video-description">Ableitungsregel für Potenzen, Hyperbeln.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=abl_Hyp&anker=5.8">Abl. Hyp</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.9">
+                <div class="ommp-video-description">Ableitungsregel für Wurzeln. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=abl_wrzl&anker=5.9">Abl. Wurzel</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.6">
+                <div class="ommp-video-description">Ableitung, Steckbriefaufgabe, Gleichungssystem lösen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=abl_steck1&anker=5.6">Abl. Steck 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.10">
+                <div class="ommp-video-description">Ableitungsregel für Potenzen, Schnittwinkel bestimmen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=abl_winkel&anker=5.10">Abl. Winkel</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.12">
+                <div class="ommp-video-description"><strong>Graphisches Ableiten:</strong> Das Ableitungs-Puzzle: f'(x) zu f(x) zuordnen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=abl_puzzle&anker=5.12">Abl. Puzzle</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.11">
+                <div class="ommp-video-description">Ableitung Kettenregel, Potenzregel, Berührpunkte an Hyperbel berechnen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=tangenten_hyp&anker=5.11">Tangente Hyp</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.13">
+                <div class="ommp-video-description">Schnittgleichung lösen durch Herausteilen einer bekannten Lösung mit Polynomdivision.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=polynomdivision2&anker=5.13">Polynomdivision 2</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Analysis Ableitungsregeln -->
+          <section class="ommp-video-section" id="Analysis2">
+            <div class="ommp-video-heading">
+              <h2>Analysis: Ableitungsregeln</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="5.22">
+                <div class="ommp-video-description">Ableitungsregeln: Produktregel, Kettenregel nutzen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=abl_produkt1&anker=5.22">Abl. Produkt 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.23">
+                <div class="ommp-video-description">Ableitungsregeln: Quotientenregel, Kettenregel nutzen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=abl_quot1&anker=5.23">Abl. Quot 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.13.1">
+                <div class="ommp-video-description">Ableitungsregeln: Zusammengesetzte Sin(x)- und Cos(x)-Funktion ableiten.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=abl_Sin_Cos&anker=5.13.1">Abl Sin Cos</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.14">
+                <div class="ommp-video-description">Ableitungsregeln: Wurzelfunktion mit Produkt- und Kettenregel.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=ableitung-2&anker=5.14">Ableitung 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.15">
+                <div class="ommp-video-description">Ableitungsregeln: Zusammengesetzte e-Funktion ableiten können. \( f(x) = 4 \cdot (2x - 3) \cdot e^{\frac{2}{3} \cdot x^2} \).</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=ableitung-e&anker=5.15">Ableitung e</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.24">
+                <div class="ommp-video-description">Ableitungsregeln: e-Funktion, Extrema bestimmen \( f(x) = a \cdot e^x + b \cdot e^{2 \cdot x} + c \). <span class="ommp-tag">TR</span> <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=abl_e_fkt_Extrema&anker=5.24">e-Fkt Extrema</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.15.1">
+                <div class="ommp-video-description">Ableitungsregeln: ln-Funktion ableiten \( h(x) = a \cdot ln(x - b) \cdot (2x + c) \).</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=ableitung-ln&anker=5.15.1">Ableitung ln</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.16">
+                <div class="ommp-video-description">Ableitungsregeln: Gebrochenrationale Funktion mit Quotienten-, Produkt- und Kettenregel.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=ableitung-4&anker=5.16">Ableitung 4</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.17">
+                <div class="ommp-video-description">Kurvendiskussion einer gebrochenrationalen Funktion. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color3&templatefile=abl_k_disk_1&anker=5.17">Abl K disk 1</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Extremwertaufgabe -->
+          <section class="ommp-video-section" id="Extremwertaufgabe">
+            <div class="ommp-video-heading">
+              <h2>Extremwertaufgabe</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="5.26">
+                <div class="ommp-video-description">Extremwertaufgabe, Oberfläche eines Quaders maximieren, Scheitelpunkt einer Parabel bestimmen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=p_extremwert&anker=5.26">Extremwert</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Integrale -->
+          <section class="ommp-video-section" id="Analysis-Integrale">
+            <div class="ommp-video-heading">
+              <h2>Analysis: Integrale</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="5.18">
+                <div class="ommp-video-description">Einfache Integrationsregel, Fläche berechnen mit Stammfunktion \( F = \int_a^b f(x)\,dx = [\,F(x) + c\,] \). <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=integral_1&anker=5.18">Integral 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.19">
+                <div class="ommp-video-description">Grundintegrale mit innerer Funktion erkennen. Bestimmtes Integral. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=integral_2&anker=5.19">Integral 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.20">
+                <div class="ommp-video-description">Fläche zwischen zwei Funktionen berechnen. Polynomdivision. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=integral_f_g&anker=5.20">Integral f_g</a></div>
+              </div>
+              <div class="ommp-video-card" id="5.21">
+                <div class="ommp-video-description">Rotationsvolumen berechnen \( V_{Rot} = \pi \cdot \int_a^b f(x)^2\,dx \). <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=int_RotVol&anker=5.21">Integral RotVol</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Kombinatorik -->
+          <section class="ommp-video-section" id="Kombinatorik">
+            <div class="ommp-video-heading">
+              <h2>Kombinatorik: Zählprinzipien</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="6.1">
+                <div class="ommp-video-description">Kombi 0: Grundtypen der Zählprinzipien erkennen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=kombi_0&anker=6.1">Kombi_0</a></div>
+              </div>
+              <div class="ommp-video-card" id="6.2">
+                <div class="ommp-video-description">Kombi 1: Genau lesen. Verschiedene Zählprinzipien erkennen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=kombi_1&anker=6.2">Kombi_1</a></div>
+              </div>
+              <div class="ommp-video-card" id="6.3">
+                <div class="ommp-video-description">Kombi 2: Genau lesen. Die Zählprinzipien und Varianten erkennen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=kombi_2&anker=6.3">Kombi_2</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Wkeit Bäume / 4F -->
+          <section class="ommp-video-section" id="Wkeit-Baeume-4F">
+            <div class="ommp-video-heading">
+              <h2>Wahrscheinlichkeit: Bäume / 4-Feldertafel</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="6.4">
+                <div class="ommp-video-description">Wkeit mit Mengenbild und Vierfeldertafel, Schnittmengen erkennen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=Wkeit-Mengenbild&anker=6.4">Wkeit Mengenbild</a></div>
+              </div>
+              <div class="ommp-video-card" id="6.5">
+                <div class="ommp-video-description">Wkeit mit Baum, Pfadregeln anwenden. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=Wkeit-Baum&anker=6.5">Wkeit-Baum</a></div>
+              </div>
+              <div class="ommp-video-card" id="6.6">
+                <div class="ommp-video-description">Wkeit Baum ← Umwandlung → 4-Feldertafel. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=Wkeit-Baum_4F&anker=6.6">Wkeit-Baum-4F</a></div>
+              </div>
+              <div class="ommp-video-card" id="6.7">
+                <div class="ommp-video-description">Bedingte Wkeit mit Vierfeldertafel.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=bedingteWkeit1&anker=6.7">Bedingte Wkeit 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="6.8">
+                <div class="ommp-video-description">Bedingte Wkeit mit Baum. Unterscheide Schnittmenge und bedingte Wkeit.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=bedingteWkeit2&anker=6.8">Bedingte Wkeit 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="6.18">
+                <div class="ommp-video-description">Bedingte Wkeit mit unsymmetrischem Baum. <span class="ommp-tag">TR</span> <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=bedingteWkeit3&anker=6.18">Bedingte Wkeit 3</a></div>
+              </div>
+              <div class="ommp-video-card" id="6.19">
+                <div class="ommp-video-description">Bedingte Wkeit: \( P_{B}(\bar{A}) = \frac{P(B \cap \bar{A})}{P(B)} \). Baum und zugehörigen inversen Baum nutzen. <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=bedingteWkeit4&anker=6.19">Bedingte Wkeit 4</a></div>
+              </div>
+              <div class="ommp-video-card" id="6.9">
+                <div class="ommp-video-description">Erwartungswert: Wann ist das Spiel fair?</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=erwWert&anker=6.9">Erw.Wert</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Beschreibende Statistik -->
+          <section class="ommp-video-section" id="BeschrStat">
+            <div class="ommp-video-heading">
+              <h2>Beschreibende Statistik</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="6.12">
+                <div class="ommp-video-description">Median interpolieren aus der Klasseneinteilung.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=Median_interpolieren&anker=6.12">Median interpolieren</a></div>
+              </div>
+              <div class="ommp-video-card" id="6.13">
+                <div class="ommp-video-description">Median interpolieren aus Klassen mit Wahrscheinlichkeiten.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=Median_interpolieren_wkeit&anker=6.13">Median interp. Wkeit</a></div>
+              </div>
+              <div class="ommp-video-card" id="6.10">
+                <div class="ommp-video-description">Standard-Abweichung aus Messwerten berechnen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=stabwn&anker=6.10">Stabwn</a></div>
+              </div>
+              <div class="ommp-video-card" id="6.11">
+                <div class="ommp-video-description">Normalverteilung: z-Werte berechnen und vergleichen.</div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=NV-z-Werte&anker=6.11">NV z-Werte</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Binomial-Verteilung -->
+          <section class="ommp-video-section" id="BinomialVerteilung">
+            <div class="ommp-video-heading">
+              <h2>Binomial-Verteilung</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="6.14">
+                <div class="ommp-video-description">Wkeit: Binomialverteilung, einzeln und summiert \( P_{n,\,p}(k) = \left(\begin{array}{c} n \\ k \end{array}\right) \cdot p^k \cdot (1-p)^{n-k} \). <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=bin-Vert1&anker=6.14">Binomial-Vert. 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="6.15">
+                <div class="ommp-video-description">Wkeit: Binomialverteilung, einzeln und summiert (binpdf, bincdf). <span class="ommp-tag">TR</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=bin-Vert2&anker=6.15">Binomial-Vert. 2</a></div>
+              </div>
+              <div class="ommp-video-card" id="6.16">
+                <div class="ommp-video-description">Wkeit: Binomialverteilung, Lösungen mit TR ausprobieren. <span class="ommp-tag">TR</span> <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=bin-Vert3&anker=6.16">Binomial-Vert. 3</a></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Hypothesen-Test -->
+          <section class="ommp-video-section" id="HypTest">
+            <div class="ommp-video-heading">
+              <h2>Hypothesen-Test</h2>
+              <a class="ommp-top-link" href="#TOP">↑ Top</a>
+            </div>
+            <div class="ommp-video-items">
+              <div class="ommp-video-card" id="6.17">
+                <div class="ommp-video-description">Wkeit: Links- oder rechtsseitiger Hypothesentest mit Binomialverteilung. <span class="ommp-tag">TR</span> <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=bin-Vert_HypTest_1&anker=6.17">HypTest 1</a></div>
+              </div>
+              <div class="ommp-video-card" id="6.18b">
+                <div class="ommp-video-description">Wkeit: Zweiseitiger Hypothesentest mit Binomialverteilung. <span class="ommp-tag">TR</span> <span class="ommp-tag beta">β</span></div>
+                <div class="ommp-video-link"><a href="main.php?bgcolor=color4&templatefile=bin-Vert_HypTest_2&anker=6.18">HypTest 2</a></div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="ommp-footer">OMMP.sternenwind.ch &nbsp; Peter Kohl</footer>
+  </div>
+</body>
+</html>
